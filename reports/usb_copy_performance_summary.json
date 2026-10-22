@@ -1,0 +1,281 @@
+{
+  "A_live": {
+    "total": {
+      "static_usb": 0,
+      "elapsed_s": 90.344,
+      "cpu_one_core_pct": 37.841,
+      "copy_wall_pct": 25.805,
+      "copy_cpu_pct": 25.822,
+      "sent": 10839,
+      "returned": 10837,
+      "errors": 5
+    },
+    "metrics": {
+      "copy_wall": {
+        "n": 10839,
+        "mean_us": 2150.895,
+        "max_us": 3919.95,
+        "p50_upper_us": 4096.0,
+        "p95_upper_us": 4096.0,
+        "p99_upper_us": 4096.0
+      },
+      "copy_cpu": {
+        "n": 10839,
+        "mean_us": 2152.269,
+        "max_us": 3872.011,
+        "p50_upper_us": 4096.0,
+        "p95_upper_us": 4096.0,
+        "p99_upper_us": 4096.0
+      },
+      "capture_complete_to_dequeue": {
+        "n": 10897,
+        "mean_us": 731.813,
+        "max_us": 1256.805,
+        "p50_upper_us": 1024.0,
+        "p95_upper_us": 1024.0,
+        "p99_upper_us": 2048.0
+      },
+      "dequeue_to_submit": {
+        "n": 10839,
+        "mean_us": 2730.97,
+        "max_us": 5404.02,
+        "p50_upper_us": 4096.0,
+        "p95_upper_us": 4096.0,
+        "p99_upper_us": 4096.0
+      },
+      "output_qbuf": {
+        "n": 10839,
+        "mean_us": 430.822,
+        "max_us": 596.34,
+        "p50_upper_us": 512.0,
+        "p95_upper_us": 512.0,
+        "p99_upper_us": 512.0
+      },
+      "usb_queue_to_return": {
+        "n": 10837,
+        "mean_us": 8848.662,
+        "max_us": 25678.021,
+        "p50_upper_us": 16384.0,
+        "p95_upper_us": 16384.0,
+        "p99_upper_us": 16384.0
+      },
+      "submit_gap": {
+        "n": 10838,
+        "mean_us": 8335.456,
+        "max_us": 9949.65,
+        "p50_upper_us": 16384.0,
+        "p95_upper_us": 16384.0,
+        "p99_upper_us": 16384.0
+      }
+    },
+    "steady_window": {
+      "seconds": 89.025309417,
+      "capture_delta": 10680,
+      "capture_fps": 119.96588464494097,
+      "sent_delta": 10681,
+      "sent_fps": 119.97711740567553,
+      "returned_delta": 10680,
+      "returned_fps": 119.96588464494097,
+      "invalid_delta": 0,
+      "usb_buf_error_delta": 5,
+      "usb_owner_error_delta": 0,
+      "usb_dq_error_delta": 0,
+      "usb_event_error_delta": 0,
+      "usb_send_error_delta": 0,
+      "dp_flips_delta": 10680,
+      "dp_flips_fps": 119.96588464494097
+    },
+    "host": {
+      "frames": 10794,
+      "fps_reported": 119.87,
+      "media_seconds": 90.007973,
+      "note": "fps_reported uses FFmpeg elapsed time; media_seconds uses stream timestamps"
+    }
+  },
+  "B_frozen": {
+    "total": {
+      "static_usb": 1,
+      "elapsed_s": 90.316,
+      "cpu_one_core_pct": 10.362,
+      "copy_wall_pct": 0.017,
+      "copy_cpu_pct": 0.017,
+      "sent": 10836,
+      "returned": 10835,
+      "errors": 1
+    },
+    "metrics": {
+      "copy_wall": {
+        "n": 4,
+        "mean_us": 3804.211,
+        "max_us": 3842.7,
+        "p50_upper_us": 4096.0,
+        "p95_upper_us": 4096.0,
+        "p99_upper_us": 4096.0
+      },
+      "copy_cpu": {
+        "n": 4,
+        "mean_us": 3810.128,
+        "max_us": 3848.13,
+        "p50_upper_us": 4096.0,
+        "p95_upper_us": 4096.0,
+        "p99_upper_us": 4096.0
+      },
+      "capture_complete_to_dequeue": {
+        "n": 10853,
+        "mean_us": 727.281,
+        "max_us": 10326.669,
+        "p50_upper_us": 1024.0,
+        "p95_upper_us": 1024.0,
+        "p99_upper_us": 2048.0
+      },
+      "dequeue_to_submit": {
+        "n": 10836,
+        "mean_us": 530.526,
+        "max_us": 5990.07,
+        "p50_upper_us": 512.0,
+        "p95_upper_us": 2048.0,
+        "p99_upper_us": 2048.0
+      },
+      "output_qbuf": {
+        "n": 10836,
+        "mean_us": 401.651,
+        "max_us": 568.53,
+        "p50_upper_us": 512.0,
+        "p95_upper_us": 512.0,
+        "p99_upper_us": 512.0
+      },
+      "usb_queue_to_return": {
+        "n": 10835,
+        "mean_us": 8755.692,
+        "max_us": 25688.191,
+        "p50_upper_us": 16384.0,
+        "p95_upper_us": 16384.0,
+        "p99_upper_us": 16384.0
+      },
+      "submit_gap": {
+        "n": 10835,
+        "mean_us": 8335.22,
+        "max_us": 9422.76,
+        "p50_upper_us": 16384.0,
+        "p95_upper_us": 16384.0,
+        "p99_upper_us": 16384.0
+      }
+    },
+    "steady_window": {
+      "seconds": 89.025107967,
+      "capture_delta": 10680,
+      "capture_fps": 119.96615610911569,
+      "sent_delta": 10681,
+      "sent_fps": 119.97738889526822,
+      "returned_delta": 10680,
+      "returned_fps": 119.96615610911569,
+      "invalid_delta": 0,
+      "usb_buf_error_delta": 1,
+      "usb_owner_error_delta": 0,
+      "usb_dq_error_delta": 0,
+      "usb_event_error_delta": 0,
+      "usb_send_error_delta": 0,
+      "dp_flips_delta": 10680,
+      "dp_flips_fps": 119.96615610911569
+    },
+    "host": {
+      "frames": 10798,
+      "fps_reported": 119.93,
+      "media_seconds": 90.007973,
+      "note": "fps_reported uses FFmpeg elapsed time; media_seconds uses stream timestamps"
+    }
+  },
+  "A2_live": {
+    "total": {
+      "static_usb": 0,
+      "elapsed_s": 90.341,
+      "cpu_one_core_pct": 37.938,
+      "copy_wall_pct": 25.997,
+      "copy_cpu_pct": 25.859,
+      "sent": 10839,
+      "returned": 10837,
+      "errors": 17
+    },
+    "metrics": {
+      "copy_wall": {
+        "n": 10839,
+        "mean_us": 2166.8,
+        "max_us": 4004.76,
+        "p50_upper_us": 4096.0,
+        "p95_upper_us": 4096.0,
+        "p99_upper_us": 4096.0
+      },
+      "copy_cpu": {
+        "n": 10839,
+        "mean_us": 2155.327,
+        "max_us": 3947.7,
+        "p50_upper_us": 4096.0,
+        "p95_upper_us": 4096.0,
+        "p99_upper_us": 4096.0
+      },
+      "capture_complete_to_dequeue": {
+        "n": 10860,
+        "mean_us": 732.974,
+        "max_us": 4123.142,
+        "p50_upper_us": 1024.0,
+        "p95_upper_us": 1024.0,
+        "p99_upper_us": 2048.0
+      },
+      "dequeue_to_submit": {
+        "n": 10839,
+        "mean_us": 3009.025,
+        "max_us": 8628.33,
+        "p50_upper_us": 4096.0,
+        "p95_upper_us": 8192.0,
+        "p99_upper_us": 8192.0
+      },
+      "output_qbuf": {
+        "n": 10839,
+        "mean_us": 432.209,
+        "max_us": 645.51,
+        "p50_upper_us": 512.0,
+        "p95_upper_us": 512.0,
+        "p99_upper_us": 512.0
+      },
+      "usb_queue_to_return": {
+        "n": 10837,
+        "mean_us": 8844.438,
+        "max_us": 26024.912,
+        "p50_upper_us": 16384.0,
+        "p95_upper_us": 16384.0,
+        "p99_upper_us": 16384.0
+      },
+      "submit_gap": {
+        "n": 10838,
+        "mean_us": 8335.213,
+        "max_us": 10606.77,
+        "p50_upper_us": 16384.0,
+        "p95_upper_us": 16384.0,
+        "p99_upper_us": 16384.0
+      }
+    },
+    "steady_window": {
+      "seconds": 89.025274497,
+      "capture_delta": 10680,
+      "capture_fps": 119.96593170133835,
+      "sent_delta": 10681,
+      "sent_fps": 119.97716446647892,
+      "returned_delta": 10680,
+      "returned_fps": 119.96593170133835,
+      "invalid_delta": 0,
+      "usb_buf_error_delta": 17,
+      "usb_owner_error_delta": 0,
+      "usb_dq_error_delta": 0,
+      "usb_event_error_delta": 0,
+      "usb_send_error_delta": 0,
+      "dp_flips_delta": 10680,
+      "dp_flips_fps": 119.96593170133835
+    },
+    "host": {
+      "frames": 10775,
+      "fps_reported": 119.65,
+      "media_seconds": 89.99964,
+      "note": "fps_reported uses FFmpeg elapsed time; media_seconds uses stream timestamps"
+    }
+  }
+}

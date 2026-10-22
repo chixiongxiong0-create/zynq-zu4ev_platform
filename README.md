@@ -91,3 +91,6 @@ PotPlayer选择本平台的UVC设备、YUY2、1280×1024、120fps。显示器刷
 
 
 2026-10-22最新固化版本：[black52-hpd](dist/black52-hpd/README.md)，替代上一版black52。修正DP通知/轮询在连接器创建前初始化的问题，并增加无连接时的快速检测和后台补查。已烧录并验证从QSPI复位后自动连接DP、输出约120Hz，无手动detect。用户确认显示器一直连接；此前“未连接”是软件缓存状态，见[修复证据](reports/dp_hpd_boot_recovery.md)。
+
+
+2026-10-22 USB复制性能实测：已加入默认关闭的分段统计，完成90秒A/B/A复核。CPU复制平均约2.15ms，约占单核26%，免重复复制降低应用CPU但未提高稳态吞吐；当前保留正常复制方案。实测报告：[USB性能与方案判断](reports/usb_copy_performance_20261022.md)。

@@ -1,0 +1,14 @@
+Input #0, dshow, from 'video=UVC Camera':
+  Duration: N/A, start: 596263.709306, bitrate: N/A
+  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422(tv, bt709/bt709/unknown), 1280x1024, 120 fps, 120 tbr, 10000k tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> wrapped_avframe (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: wrapped_avframe, yuyv422(tv, bt709/bt709/unknown, progressive), 1280x1024, q=2-31, 200 kb/s, 120 fps, 120 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 wrapped_avframe
+[out#0/null @ 00000295e9319340] video:774KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 1801 fps=120 q=-0.0 Lsize=N/A time=00:00:15.00 bitrate=N/A speed=0.998x    

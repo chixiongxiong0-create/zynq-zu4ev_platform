@@ -1,0 +1,17 @@
+ps | grep sc130_platform_bridge; tail -n 3 /tmp/sc130-platform.log; cat /sys
+
+/class/drm/card0-DP-1/status; cat /sys/class/udc/*/current_speed; sha256sum /usr
+
+/bin/sc130_platform_bridge; qspi_rc=$?; echo QSPI_CMD_DONE_290c5a17f0244247969f3
+
+afbcc1ad9e9:$qspi_rc
+  365 0         0:16 /usr/bin/sc130_platform_bridge --soft-connect /sys/class/udc/fe200000.usb/soft_connect
+  381 0         0:00 grep sc130_platform_bridge
+stats ns=1548968489854 capture=25081 sent=1839 returned=1837 invalid=0 drop=11 usb_error=0 dp_flips=25069 seq=187219 dp_held=2
+stats ns=1549968776624 capture=25201 sent=1839 returned=1837 invalid=0 drop=11 usb_error=0 dp_flips=25189 seq=187339 dp_held=2
+DP flips=25200 sequence=173360 active=0 retired=1
+connected
+super-speed
+0d6e818e45b426476e87944e277104d03030d73cd99cb8d2971d4ce8d3558fe1  /usr/bin/sc130_platform_bridge
+QSPI_CMD_DONE_290c5a17f0244247969f3afbcc1ad9e9:0
+~ # 

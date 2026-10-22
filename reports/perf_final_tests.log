@@ -1,0 +1,42 @@
+mkdir -p /tmp/sc130-perf-final
+cc -O2 -g -std=c11 -D_DEFAULT_SOURCE -Wall -Wextra -Werror tests/test_usb_perf.c uvc_core.c dp_display.c -o /tmp/sc130-perf-final/test_usb_perf
+cc -O2 -g -std=c11 -D_DEFAULT_SOURCE -Wall -Wextra -Werror tests/test_perf.c -o /tmp/sc130-perf-final/test_perf
+cc -O2 -g -std=c11 -D_DEFAULT_SOURCE -Wall -Wextra -Werror tests/test_broker.c -o /tmp/sc130-perf-final/test_broker
+cc -O2 -g -std=c11 -D_DEFAULT_SOURCE -Wall -Wextra -Werror tests/dp_ownership_test.c -o /tmp/sc130-perf-final/dp_ownership_test
+cc -O2 -g -std=c11 -D_DEFAULT_SOURCE -Wall -Wextra -Werror tests/test_platform_events.c uvc_core.c dp_display.c -o /tmp/sc130-perf-final/test_platform_events
+cc -O2 -g -std=c11 -D_DEFAULT_SOURCE -Wall -Wextra -Werror tests/test_snapshot.c uvc_core.c dp_display.c -o /tmp/sc130-perf-final/test_snapshot
+cc -O2 -g -std=c11 -D_DEFAULT_SOURCE -Wall -Wextra -Werror tests/test_usb_marker.c uvc_core.c dp_display.c -o /tmp/sc130-perf-final/test_usb_marker
+cc -O2 -g -std=c11 -D_DEFAULT_SOURCE -Wall -Wextra -Werror tests/test_usb_completion.c uvc_core.c dp_display.c -o /tmp/sc130-perf-final/test_usb_completion
+/tmp/sc130-perf-final/test_usb_perf
+live/frozen copy accounting, output queue, source integrity and DP/capture ownership passed
+/tmp/sc130-perf-final/test_perf
+perf empty, quantiles, boundary rounding and large latency passed
+/tmp/sc130-perf-final/test_broker
+/tmp/sc130-perf-final/dp_ownership_test
+DP flips=1 sequence=7 active=0 retired=-1
+DP disable failed -5: buffers quarantined
+dp ownership tests passed
+/tmp/sc130-perf-final/test_platform_events
+USB stopped; capture and DP continue
+USB stop preserves capture/DP and default120 test passed
+/tmp/sc130-perf-final/test_snapshot
+SNAPSHOT sequence=42 path=/tmp/sc130-snapshot-test-Qn04oO/frame.yuy2 bytes=2621440
+snapshot signal, size, IO failure and retained ownership tests passed
+/tmp/sc130-perf-final/test_usb_marker
+USB marker default-off, magic/LE sequence/chroma/rest tests passed
+/tmp/sc130-perf-final/test_usb_completion
+USB error kind=ownership count=1 ns=8257198176 errno=71 streaming=0 on=1 index=0 flags=0x40 bytesused=0 sequence=99 source_seq=1234 state=0
+USB error kind=ownership count=1 ns=8257689395 errno=71 streaming=0 on=1 index=16 flags=0x40 bytesused=0 sequence=99
+USB error kind=dqbuf count=1 ns=8258056278 errno=5 streaming=0 on=1
+USB error kind=event count=1 ns=8258290842 errno=19 streaming=0 on=1
+USB error kind=send count=1 ns=8258517580 errno=5 streaming=0 on=1
+USB error kind=buffer count=1 ns=8258706918 errno=0 streaming=0 on=1
+USB error kind=buffer count=2 ns=8258901226 errno=0 streaming=0 on=1
+USB error kind=buffer count=3 ns=8259094411 errno=0 streaming=0 on=1
+USB error kind=buffer count=4 ns=8259281444 errno=0 streaming=0 on=1
+USB error kind=buffer count=5 ns=8259493415 errno=0 streaming=0 on=1
+USB error kind=buffer count=6 ns=8259690518 errno=0 streaming=0 on=1
+USB error kind=buffer count=7 ns=8259877642 errno=0 streaming=0 on=1
+USB error kind=buffer count=8 ns=8260084903 errno=0 streaming=0 on=1
+USB error kind=buffer count=16 ns=8260304198 errno=0 streaming=0 on=1
+USB completion retains error context and capture/DP ownership: PASS

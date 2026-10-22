@@ -1,0 +1,1462 @@
+device=/dev/video0 driver=sc130_capture_v bus=platform:sc130-dual
+CAPTURE ALWAYS ON buffers=9; independent of USB host
+DP connector=42 modes=37 encoders=1
+DP EDID mode 2560x1440 clock=241500 totals=2720x1481
+DP EDID mode 1920x1080 clock=297000 totals=2200x1125
+DP EDID mode 1920x1080 clock=296703 totals=2200x1125
+DP EDID mode 1920x1080 clock=297000 totals=2640x1125
+DP EDID mode 1920x1080 clock=148500 totals=2200x1125
+DP EDID mode 1920x1080 clock=148500 totals=2200x1125
+DP EDID mode 1920x1080 clock=148352 totals=2200x1125
+DP EDID mode 1920x1080 clock=148500 totals=2640x1125
+DP EDID mode 1280x1024 clock=135000 totals=1688x1066
+DP EDID mode 1280x1024 clock=108000 totals=1688x1066
+DP EDID mode 1440x900 clock=106500 totals=1904x934
+DP EDID mode 1152x864 clock=108000 totals=1600x900
+DP EDID mode 1280x720 clock=74250 totals=1650x750
+DP EDID mode 1280x720 clock=74176 totals=1650x750
+DP EDID mode 1280x720 clock=74250 totals=1980x750
+DP EDID mode 1440x576 clock=54000 totals=1728x625
+DP EDID mode 1440x576 clock=54000 totals=1728x625
+DP EDID mode 1024x768 clock=78750 totals=1312x800
+DP EDID mode 1024x768 clock=75000 totals=1328x806
+DP EDID mode 1024x768 clock=65000 totals=1344x806
+DP EDID mode 1440x480 clock=54054 totals=1716x525
+DP EDID mode 1440x480 clock=54054 totals=1716x525
+DP EDID mode 1440x480 clock=54000 totals=1716x525
+DP EDID mode 1440x480 clock=54000 totals=1716x525
+DP EDID mode 832x624 clock=57284 totals=1152x667
+DP EDID mode 800x600 clock=49500 totals=1056x625
+DP EDID mode 800x600 clock=50000 totals=1040x666
+DP EDID mode 800x600 clock=40000 totals=1056x628
+DP EDID mode 800x600 clock=36000 totals=1024x625
+DP EDID mode 720x576 clock=27000 totals=864x625
+DP EDID mode 720x576 clock=27000 totals=864x625
+DP EDID mode 640x480 clock=31500 totals=840x500
+DP EDID mode 640x480 clock=31500 totals=832x520
+DP EDID mode 640x480 clock=30240 totals=864x525
+DP EDID mode 640x480 clock=25200 totals=800x525
+DP EDID mode 640x480 clock=25175 totals=800x525
+DP EDID mode 720x400 clock=28320 totals=900x449
+DP property object=33 type id=9 value=0
+DP property object=36 type id=9 value=1
+DP property object=42 CRTC_ID id=21 value=40
+DP property object=40 MODE_ID id=24 value=45
+DP property object=40 ACTIVE id=23 value=1
+DP property object=36 FB_ID id=18 value=44
+DP property object=36 CRTC_ID id=21 value=40
+DP property object=36 SRC_X id=10 value=0
+DP property object=36 SRC_Y id=11 value=0
+DP property object=36 SRC_W id=12 value=167772160
+DP property object=36 SRC_H id=13 value=94371840
+DP property object=36 CRTC_X id=14 value=0
+DP property object=36 CRTC_Y id=15 value=0
+DP property object=36 CRTC_W id=16 value=2560
+DP property object=36 CRTC_H id=17 value=1440
+DP property object=36 alpha id=39 value=0
+DP property object=33 FB_ID id=18 value=0
+DP property object=33 CRTC_ID id=21 value=0
+DP enabled connector=42 crtc=40 primary=36 YUYV-overlay=33 mode=1280x1024-120 clock=187315kHz totals=1440x1084
+DP actual mode_valid=1 1280x1024 clock=187315kHz
+DP imported 9 persistent capture buffers
+device=/dev/video1 driver=g_uvc bus=gadget.0
+USB ready default120; capture independent of host
+DP property object=33 SRC_X id=10 value=0
+DP property object=33 SRC_Y id=11 value=0
+DP property object=33 SRC_W id=12 value=0
+DP property object=33 SRC_H id=13 value=0
+DP property object=33 CRTC_X id=14 value=0
+DP property object=33 CRTC_Y id=15 value=0
+DP property object=33 CRTC_W id=16 value=0
+DP property object=33 CRTC_H id=17 value=0
+DP flips=1 sequence=100278 active=7 retired=-1
+USB CONNECT speed=5 superspeed=1
+stats ns=940402086032 capture=119 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=112 seq=114211 dp_held=1 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=119 mean_us=2908.703 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=32768.000 p99_upper_us=65536.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=941402088221 capture=239 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=232 seq=114331 dp_held=1 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=239 mean_us=1800.245 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=65536.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=942402088401 capture=359 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=352 seq=114451 dp_held=1 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=359 mean_us=1433.097 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=65536.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=943402089751 capture=479 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=472 seq=114571 dp_held=1 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=479 mean_us=1249.922 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=32768.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=944402092631 capture=599 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=592 seq=114691 dp_held=1 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=599 mean_us=1140.173 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=32768.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=945405120800 capture=720 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=712 seq=114812 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=720 mean_us=1066.436 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=8192.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=946405402560 capture=840 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=832 seq=114932 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=840 mean_us=1014.374 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=947405684710 capture=960 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=952 seq=115052 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=960 mean_us=975.242 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=948405970910 capture=1080 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=1072 seq=115172 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=1080 mean_us=944.859 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=949406256059 capture=1200 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=1192 seq=115292 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=1200 mean_us=920.566 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+DP flips=1200 sequence=101477 active=1 retired=0
+stats ns=950406540339 capture=1320 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=1312 seq=115412 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=1320 mean_us=900.654 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=951406825309 capture=1440 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=1432 seq=115532 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=1440 mean_us=884.093 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=952407109529 capture=1560 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=1552 seq=115652 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=1560 mean_us=870.089 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=953407397198 capture=1680 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=1672 seq=115772 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=1680 mean_us=858.086 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=954407678688 capture=1800 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=1792 seq=115892 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=1800 mean_us=847.674 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+USB stopped; capture and DP continue
+stats ns=955407964768 capture=1920 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=1912 seq=116012 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=1920 mean_us=838.686 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=956408266808 capture=2040 sent=0 returned=0 invalid=0 drop=7 usb_error=0 dp_flips=2032 seq=116132 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=2040 mean_us=830.630 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+USB CONNECT speed=5 superspeed=1
+DP flip gap=3 sequence=102354
+stats ns=957408500807 capture=2160 sent=0 returned=0 invalid=0 drop=8 usb_error=0 dp_flips=2150 seq=116252 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=2160 mean_us=833.783 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+stats ns=958408780407 capture=2280 sent=0 returned=0 invalid=0 drop=8 usb_error=0 dp_flips=2270 seq=116372 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.000 cpu_one_core_pct=0.000 copy_wall_pct=0.000 copy_cpu_pct=0.000 sent=0 returned=0 errors=0
+PERF metric=copy_wall n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=copy_cpu n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=capture_complete_to_dequeue n=2280 mean_us=826.871 max_us=61795.055 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=output_qbuf n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=usb_queue_to_return n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+PERF metric=submit_gap n=0 mean_us=0.000 max_us=0.000 p50_upper_us=0.000 p95_upper_us=0.000 p99_upper_us=0.000
+USB STREAMON fps=120 copy; capture already running
+stats ns=959409109057 capture=2400 sent=96 returned=95 invalid=0 drop=8 usb_error=0 dp_flips=2390 seq=116492 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=0.795 cpu_one_core_pct=39.215 copy_wall_pct=26.873 copy_cpu_pct=26.896 sent=96 returned=95 errors=0
+PERF metric=copy_wall n=96 mean_us=2226.060 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=96 mean_us=2227.915 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=97 mean_us=733.509 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=96 mean_us=4062.259 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=8192.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=96 mean_us=432.351 max_us=490.440 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=95 mean_us=9785.323 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=32768.000 p99_upper_us=32768.000
+PERF metric=submit_gap n=95 mean_us=8324.475 max_us=9564.810 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=2400 sequence=102679 active=1 retired=3
+stats ns=960409390247 capture=2520 sent=216 returned=215 invalid=0 drop=8 usb_error=0 dp_flips=2510 seq=116612 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=1.795 cpu_one_core_pct=38.417 copy_wall_pct=26.167 copy_cpu_pct=26.198 sent=216 returned=215 errors=0
+PERF metric=copy_wall n=216 mean_us=2174.978 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=216 mean_us=2177.559 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=217 mean_us=733.182 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=216 mean_us=3968.384 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=8192.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=216 mean_us=432.228 max_us=491.940 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=215 mean_us=9252.403 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=32768.000
+PERF metric=submit_gap n=215 mean_us=8330.191 max_us=9564.810 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=961409667266 capture=2640 sent=337 returned=335 invalid=0 drop=8 usb_error=0 dp_flips=2630 seq=116732 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=2.803 cpu_one_core_pct=38.278 copy_wall_pct=26.089 copy_cpu_pct=26.126 sent=337 returned=335 errors=0
+PERF metric=copy_wall n=337 mean_us=2169.611 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=337 mean_us=2172.662 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=337 mean_us=732.421 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=337 mean_us=3804.324 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=8192.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=337 mean_us=430.944 max_us=496.740 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=335 mean_us=9114.055 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=32768.000
+PERF metric=submit_gap n=336 mean_us=8328.026 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=962409946326 capture=2760 sent=457 returned=455 invalid=0 drop=8 usb_error=0 dp_flips=2750 seq=116852 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=3.803 cpu_one_core_pct=38.110 copy_wall_pct=26.004 copy_cpu_pct=26.040 sent=457 returned=455 errors=0
+PERF metric=copy_wall n=457 mean_us=2163.921 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=457 mean_us=2166.893 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=457 mean_us=729.776 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=1024.000
+PERF metric=dequeue_to_submit n=457 mean_us=3486.127 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=8192.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=457 mean_us=430.239 max_us=496.740 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=455 mean_us=9046.038 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=32768.000
+PERF metric=submit_gap n=456 mean_us=8330.050 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=963410575846 capture=2880 sent=577 returned=575 invalid=0 drop=8 usb_error=0 dp_flips=2871 seq=116972 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=4.803 cpu_one_core_pct=37.985 copy_wall_pct=25.943 copy_cpu_pct=25.981 sent=577 returned=575 errors=0
+PERF metric=copy_wall n=577 mean_us=2159.759 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=577 mean_us=2162.903 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=577 mean_us=774.930 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=2048.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=577 mean_us=3315.990 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=8192.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=577 mean_us=430.449 max_us=497.550 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=575 mean_us=9005.785 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=32768.000
+PERF metric=submit_gap n=576 mean_us=8331.836 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=964410673496 capture=3000 sent=697 returned=695 invalid=0 drop=8 usb_error=0 dp_flips=2991 seq=117092 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=5.804 cpu_one_core_pct=37.930 copy_wall_pct=25.929 copy_cpu_pct=25.967 sent=697 returned=695 errors=0
+PERF metric=copy_wall n=697 mean_us=2158.976 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=697 mean_us=2162.148 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=697 mean_us=783.282 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=2048.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=697 mean_us=3211.915 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=8192.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=697 mean_us=430.457 max_us=528.090 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=695 mean_us=8977.803 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=32768.000
+PERF metric=submit_gap n=696 mean_us=8332.229 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=965410956515 capture=3120 sent=817 returned=815 invalid=0 drop=8 usb_error=0 dp_flips=3111 seq=117212 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=6.804 cpu_one_core_pct=37.995 copy_wall_pct=25.965 copy_cpu_pct=26.002 sent=817 returned=815 errors=0
+PERF metric=copy_wall n=817 mean_us=2162.301 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=817 mean_us=2165.440 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=817 mean_us=779.624 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=2048.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=817 mean_us=3142.571 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=8192.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=817 mean_us=430.561 max_us=528.090 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=815 mean_us=8957.680 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=816 mean_us=8332.746 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=966411241605 capture=3240 sent=937 returned=935 invalid=0 drop=8 usb_error=0 dp_flips=3231 seq=117332 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=7.804 cpu_one_core_pct=37.977 copy_wall_pct=25.926 copy_cpu_pct=25.963 sent=937 returned=935 errors=0
+PERF metric=copy_wall n=937 mean_us=2159.319 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=937 mean_us=2162.405 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=937 mean_us=772.887 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=2048.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=937 mean_us=3085.601 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=937 mean_us=430.647 max_us=528.090 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=935 mean_us=8940.391 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=936 mean_us=8333.146 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=967411478995 capture=3360 sent=1057 returned=1055 invalid=0 drop=8 usb_error=0 dp_flips=3351 seq=117452 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=8.806 cpu_one_core_pct=37.972 copy_wall_pct=25.907 copy_cpu_pct=25.944 sent=1057 returned=1055 errors=0
+PERF metric=copy_wall n=1057 mean_us=2158.206 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=1057 mean_us=2161.280 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=1057 mean_us=766.890 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=1057 mean_us=3042.763 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=1057 mean_us=430.759 max_us=528.090 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=1055 mean_us=8927.818 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=1056 mean_us=8334.450 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=968411759945 capture=3480 sent=1177 returned=1175 invalid=0 drop=8 usb_error=0 dp_flips=3471 seq=117572 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=9.805 cpu_one_core_pct=37.983 copy_wall_pct=25.931 copy_cpu_pct=25.940 sent=1177 returned=1175 errors=0
+PERF metric=copy_wall n=1177 mean_us=2160.143 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=1177 mean_us=2160.821 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=1177 mean_us=762.088 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=1177 mean_us=3011.908 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=1177 mean_us=431.045 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=1175 mean_us=8919.665 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=1176 mean_us=8333.604 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=969412080254 capture=3600 sent=1297 returned=1295 invalid=0 drop=8 usb_error=0 dp_flips=3591 seq=117692 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=10.805 cpu_one_core_pct=37.989 copy_wall_pct=25.922 copy_cpu_pct=25.933 sent=1297 returned=1295 errors=0
+PERF metric=copy_wall n=1297 mean_us=2159.526 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=1297 mean_us=2160.442 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=1297 mean_us=757.888 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=1297 mean_us=2984.246 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=1297 mean_us=431.086 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=1295 mean_us=8912.041 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=1296 mean_us=8333.810 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=3600 sequence=103879 active=0 retired=3
+stats ns=970412359644 capture=3720 sent=1417 returned=1415 invalid=0 drop=8 usb_error=0 dp_flips=3711 seq=117812 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=11.805 cpu_one_core_pct=38.019 copy_wall_pct=25.941 copy_cpu_pct=25.954 sent=1417 returned=1415 errors=0
+PERF metric=copy_wall n=1417 mean_us=2161.190 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=1417 mean_us=2162.265 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=1417 mean_us=754.390 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=1417 mean_us=2963.305 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=1417 mean_us=431.085 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=1415 mean_us=8906.047 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=1416 mean_us=8333.945 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=971412649714 capture=3840 sent=1537 returned=1535 invalid=0 drop=8 usb_error=0 dp_flips=3831 seq=117932 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=12.806 cpu_one_core_pct=37.992 copy_wall_pct=25.905 copy_cpu_pct=25.919 sent=1537 returned=1535 errors=0
+PERF metric=copy_wall n=1537 mean_us=2158.255 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=1537 mean_us=2159.460 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=1537 mean_us=751.455 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=1537 mean_us=2941.299 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=1537 mean_us=431.000 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=1535 mean_us=8899.405 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=1536 mean_us=8334.094 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=972412927844 capture=3960 sent=1657 returned=1655 invalid=0 drop=8 usb_error=0 dp_flips=3951 seq=118052 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=13.806 cpu_one_core_pct=38.005 copy_wall_pct=25.908 copy_cpu_pct=25.924 sent=1657 returned=1655 errors=0
+PERF metric=copy_wall n=1657 mean_us=2158.634 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=1657 mean_us=2159.960 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=1657 mean_us=748.901 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=1657 mean_us=2925.477 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=1657 mean_us=431.083 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=1655 mean_us=8895.340 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=1656 mean_us=8334.209 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=973413186053 capture=4080 sent=1777 returned=1775 invalid=0 drop=8 usb_error=0 dp_flips=4071 seq=118172 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=14.806 cpu_one_core_pct=37.997 copy_wall_pct=25.894 copy_cpu_pct=25.911 sent=1777 returned=1775 errors=0
+PERF metric=copy_wall n=1777 mean_us=2157.496 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=1777 mean_us=2158.917 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=1777 mean_us=746.696 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=1777 mean_us=2910.263 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=1777 mean_us=431.060 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=1775 mean_us=8891.383 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=1776 mean_us=8334.294 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=974413471143 capture=4200 sent=1897 returned=1895 invalid=0 drop=8 usb_error=0 dp_flips=4191 seq=118292 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=15.806 cpu_one_core_pct=37.965 copy_wall_pct=25.856 copy_cpu_pct=25.874 sent=1897 returned=1895 errors=0
+PERF metric=copy_wall n=1897 mean_us=2154.384 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=1897 mean_us=2155.901 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=1897 mean_us=744.759 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=1897 mean_us=2894.883 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=1897 mean_us=431.112 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=1895 mean_us=8886.378 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=1896 mean_us=8334.388 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=975413753623 capture=4320 sent=2017 returned=2015 invalid=0 drop=8 usb_error=0 dp_flips=4311 seq=118412 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=16.807 cpu_one_core_pct=37.964 copy_wall_pct=25.848 copy_cpu_pct=25.868 sent=2017 returned=2015 errors=0
+PERF metric=copy_wall n=2017 mean_us=2153.826 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=2017 mean_us=2155.428 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=2017 mean_us=743.121 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=2017 mean_us=2883.562 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=2017 mean_us=431.153 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=2015 mean_us=8883.132 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=2016 mean_us=8334.481 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=976414036523 capture=4440 sent=2137 returned=2135 invalid=0 drop=8 usb_error=0 dp_flips=4431 seq=118532 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=17.807 cpu_one_core_pct=37.971 copy_wall_pct=25.851 copy_cpu_pct=25.872 sent=2137 returned=2135 errors=0
+PERF metric=copy_wall n=2137 mean_us=2154.118 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=2137 mean_us=2155.806 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=2137 mean_us=741.654 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=2137 mean_us=2874.276 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=2137 mean_us=431.209 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=2135 mean_us=8881.169 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=2136 mean_us=8334.555 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=977414319032 capture=4560 sent=2257 returned=2255 invalid=0 drop=8 usb_error=0 dp_flips=4551 seq=118652 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=18.807 cpu_one_core_pct=37.974 copy_wall_pct=25.850 copy_cpu_pct=25.871 sent=2257 returned=2255 errors=0
+PERF metric=copy_wall n=2257 mean_us=2154.004 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=2257 mean_us=2155.762 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=2257 mean_us=740.337 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=2257 mean_us=2865.536 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=2257 mean_us=431.175 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=2255 mean_us=8878.727 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=2256 mean_us=8334.607 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=978414600222 capture=4680 sent=2377 returned=2375 invalid=0 drop=8 usb_error=0 dp_flips=4671 seq=118772 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=19.808 cpu_one_core_pct=37.959 copy_wall_pct=25.830 copy_cpu_pct=25.851 sent=2377 returned=2375 errors=0
+PERF metric=copy_wall n=2377 mean_us=2152.374 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=2377 mean_us=2154.184 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=2377 mean_us=739.187 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=2377 mean_us=2856.255 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=2377 mean_us=431.264 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=2375 mean_us=8875.815 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=2376 mean_us=8334.665 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=979414888132 capture=4800 sent=2497 returned=2495 invalid=0 drop=8 usb_error=0 dp_flips=4791 seq=118892 dp_held=2 usb_buf_error=0 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=20.808 cpu_one_core_pct=37.952 copy_wall_pct=25.819 copy_cpu_pct=25.841 sent=2497 returned=2495 errors=0
+PERF metric=copy_wall n=2497 mean_us=2151.490 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=2497 mean_us=2153.354 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=2497 mean_us=738.120 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=2497 mean_us=2848.373 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=2497 mean_us=431.251 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=2495 mean_us=8873.202 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=2496 mean_us=8334.725 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=4800 sequence=105079 active=0 retired=3
+USB error kind=buffer count=1 ns=979617530790 errno=0 streaming=1 on=1 index=0 flags=0x4041 bytesused=0 sequence=0 source_seq=118915 state=0
+stats ns=980415172802 capture=4920 sent=2617 returned=2615 invalid=0 drop=8 usb_error=1 dp_flips=4911 seq=119012 dp_held=2 usb_buf_error=1 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=21.808 cpu_one_core_pct=37.948 copy_wall_pct=25.811 copy_cpu_pct=25.834 sent=2617 returned=2615 errors=1
+PERF metric=copy_wall n=2617 mean_us=2150.929 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=2617 mean_us=2152.845 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=2617 mean_us=737.160 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=2617 mean_us=2841.458 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=2617 mean_us=431.213 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=2615 mean_us=8871.075 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=2616 mean_us=8334.753 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=981415458671 capture=5040 sent=2737 returned=2735 invalid=0 drop=8 usb_error=1 dp_flips=5031 seq=119132 dp_held=2 usb_buf_error=1 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=22.809 cpu_one_core_pct=37.946 copy_wall_pct=25.808 copy_cpu_pct=25.831 sent=2737 returned=2735 errors=1
+PERF metric=copy_wall n=2737 mean_us=2150.738 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=2737 mean_us=2152.697 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=2737 mean_us=736.307 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=2737 mean_us=2835.453 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=2737 mean_us=431.199 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=2735 mean_us=8868.860 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=2736 mean_us=8335.190 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=982415744211 capture=5160 sent=2857 returned=2855 invalid=0 drop=8 usb_error=1 dp_flips=5151 seq=119252 dp_held=2 usb_buf_error=1 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=23.809 cpu_one_core_pct=37.952 copy_wall_pct=25.811 copy_cpu_pct=25.835 sent=2857 returned=2855 errors=1
+PERF metric=copy_wall n=2857 mean_us=2151.022 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=2857 mean_us=2153.019 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=2857 mean_us=735.535 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=2857 mean_us=2830.458 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=2857 mean_us=431.202 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=2855 mean_us=8868.640 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=2856 mean_us=8334.976 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=983416049341 capture=5280 sent=2977 returned=2975 invalid=0 drop=8 usb_error=1 dp_flips=5271 seq=119372 dp_held=2 usb_buf_error=1 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=24.809 cpu_one_core_pct=37.933 copy_wall_pct=25.805 copy_cpu_pct=25.830 sent=2977 returned=2975 errors=1
+PERF metric=copy_wall n=2977 mean_us=2150.500 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=2977 mean_us=2152.529 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=2977 mean_us=734.849 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=2977 mean_us=2824.987 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=2977 mean_us=431.159 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=2975 mean_us=8866.983 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=2976 mean_us=8334.872 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=984416350121 capture=5400 sent=3097 returned=3095 invalid=0 drop=8 usb_error=1 dp_flips=5391 seq=119492 dp_held=2 usb_buf_error=1 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=25.809 cpu_one_core_pct=37.906 copy_wall_pct=25.793 copy_cpu_pct=25.818 sent=3097 returned=3095 errors=1
+PERF metric=copy_wall n=3097 mean_us=2149.491 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=3097 mean_us=2151.562 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=3097 mean_us=734.271 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=3097 mean_us=2819.395 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=3097 mean_us=431.077 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=3095 mean_us=8865.437 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=3096 mean_us=8334.905 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=985416631610 capture=5520 sent=3217 returned=3215 invalid=0 drop=8 usb_error=1 dp_flips=5511 seq=119612 dp_held=2 usb_buf_error=1 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=26.810 cpu_one_core_pct=37.894 copy_wall_pct=25.793 copy_cpu_pct=25.818 sent=3217 returned=3215 errors=1
+PERF metric=copy_wall n=3217 mean_us=2149.511 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=3217 mean_us=2151.575 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=3217 mean_us=733.859 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=3217 mean_us=2815.276 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=3217 mean_us=431.042 max_us=554.310 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=3215 mean_us=8864.146 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=3216 mean_us=8334.934 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=986416914150 capture=5640 sent=3337 returned=3335 invalid=0 drop=8 usb_error=1 dp_flips=5631 seq=119732 dp_held=2 usb_buf_error=1 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=27.810 cpu_one_core_pct=37.882 copy_wall_pct=25.802 copy_cpu_pct=25.817 sent=3337 returned=3335 errors=1
+PERF metric=copy_wall n=3337 mean_us=2150.269 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=3337 mean_us=2151.551 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=3337 mean_us=733.316 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=3337 mean_us=2812.339 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=3337 mean_us=431.134 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=3335 mean_us=8863.720 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=3336 mean_us=8334.955 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+USB error kind=buffer count=2 ns=986427706621 errno=0 streaming=1 on=1 index=1 flags=0x4041 bytesused=0 sequence=0 source_seq=119732 state=0
+USB error kind=buffer count=3 ns=986869549368 errno=0 streaming=1 on=1 index=0 flags=0x4041 bytesused=0 sequence=0 source_seq=119785 state=0
+stats ns=987417199210 capture=5760 sent=3457 returned=3455 invalid=0 drop=8 usb_error=3 dp_flips=5751 seq=119852 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=28.810 cpu_one_core_pct=37.851 copy_wall_pct=25.782 copy_cpu_pct=25.798 sent=3457 returned=3455 errors=3
+PERF metric=copy_wall n=3457 mean_us=2148.593 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=3457 mean_us=2149.928 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=3457 mean_us=732.842 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=3457 mean_us=2807.017 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=3457 mean_us=431.111 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=3455 mean_us=8862.348 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=3456 mean_us=8334.987 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=988417455200 capture=5880 sent=3577 returned=3575 invalid=0 drop=8 usb_error=3 dp_flips=5871 seq=119972 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=29.810 cpu_one_core_pct=37.840 copy_wall_pct=25.780 copy_cpu_pct=25.797 sent=3577 returned=3575 errors=3
+PERF metric=copy_wall n=3577 mean_us=2148.493 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=3577 mean_us=2149.881 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=3577 mean_us=732.402 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=3577 mean_us=2803.480 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=3577 mean_us=431.030 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=3575 mean_us=8861.904 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=3576 mean_us=8335.000 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flip gap=2 sequence=106178
+stats ns=989417638049 capture=6000 sent=3697 returned=3695 invalid=0 drop=8 usb_error=3 dp_flips=5990 seq=120092 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=30.811 cpu_one_core_pct=37.834 copy_wall_pct=25.784 copy_cpu_pct=25.800 sent=3697 returned=3695 errors=3
+PERF metric=copy_wall n=3697 mean_us=2148.819 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=3697 mean_us=2150.173 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=3697 mean_us=732.019 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=3697 mean_us=2797.616 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=3697 mean_us=430.811 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=3695 mean_us=8861.835 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=3696 mean_us=8335.007 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=6000 sequence=106280 active=0 retired=3
+stats ns=990417912969 capture=6120 sent=3817 returned=3815 invalid=0 drop=8 usb_error=3 dp_flips=6110 seq=120212 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=31.811 cpu_one_core_pct=37.824 copy_wall_pct=25.781 copy_cpu_pct=25.798 sent=3817 returned=3815 errors=3
+PERF metric=copy_wall n=3817 mean_us=2148.612 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=3817 mean_us=2149.966 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=3817 mean_us=731.696 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=3817 mean_us=2790.913 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=3817 mean_us=430.658 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=3815 mean_us=8861.097 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=3816 mean_us=8335.030 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=991418199349 capture=6240 sent=3937 returned=3935 invalid=0 drop=8 usb_error=3 dp_flips=6230 seq=120332 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=32.812 cpu_one_core_pct=37.838 copy_wall_pct=25.800 copy_cpu_pct=25.817 sent=3937 returned=3935 errors=3
+PERF metric=copy_wall n=3937 mean_us=2150.265 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=3937 mean_us=2151.661 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=3937 mean_us=731.407 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=3937 mean_us=2787.042 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=3937 mean_us=430.612 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=3935 mean_us=8861.754 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=3936 mean_us=8335.378 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=992418956669 capture=6360 sent=4057 returned=4055 invalid=0 drop=8 usb_error=3 dp_flips=6351 seq=120452 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=33.812 cpu_one_core_pct=37.827 copy_wall_pct=25.794 copy_cpu_pct=25.812 sent=4057 returned=4055 errors=3
+PERF metric=copy_wall n=4057 mean_us=2149.729 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=4057 mean_us=2151.184 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=4057 mean_us=734.333 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=4057 mean_us=2781.713 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=4057 mean_us=430.526 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=4055 mean_us=8861.083 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=4056 mean_us=8335.183 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=993418957838 capture=6480 sent=4177 returned=4175 invalid=0 drop=8 usb_error=3 dp_flips=6471 seq=120572 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=34.812 cpu_one_core_pct=37.816 copy_wall_pct=25.792 copy_cpu_pct=25.810 sent=4177 returned=4175 errors=3
+PERF metric=copy_wall n=4177 mean_us=2149.545 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=4177 mean_us=2151.045 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=4177 mean_us=739.920 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=4177 mean_us=2779.270 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=4177 mean_us=430.447 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=4175 mean_us=8860.197 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=4176 mean_us=8335.130 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=994419210708 capture=6600 sent=4297 returned=4295 invalid=0 drop=8 usb_error=3 dp_flips=6591 seq=120692 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=35.812 cpu_one_core_pct=37.821 copy_wall_pct=25.795 copy_cpu_pct=25.814 sent=4297 returned=4295 errors=3
+PERF metric=copy_wall n=4297 mean_us=2149.841 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=4297 mean_us=2151.381 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=4297 mean_us=740.589 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=4297 mean_us=2777.604 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=4297 mean_us=430.530 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=4295 mean_us=8859.587 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=4296 mean_us=8335.139 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=995419498618 capture=6720 sent=4417 returned=4415 invalid=0 drop=8 usb_error=3 dp_flips=6711 seq=120812 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=36.812 cpu_one_core_pct=37.823 copy_wall_pct=25.793 copy_cpu_pct=25.812 sent=4417 returned=4415 errors=3
+PERF metric=copy_wall n=4417 mean_us=2149.636 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=4417 mean_us=2151.213 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=4417 mean_us=740.450 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=4417 mean_us=2775.593 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=4417 mean_us=430.612 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=4415 mean_us=8858.806 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=4416 mean_us=8335.157 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=996419724308 capture=6840 sent=4537 returned=4535 invalid=0 drop=8 usb_error=3 dp_flips=6831 seq=120932 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=37.813 cpu_one_core_pct=37.827 copy_wall_pct=25.793 copy_cpu_pct=25.812 sent=4537 returned=4535 errors=3
+PERF metric=copy_wall n=4537 mean_us=2149.651 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=4537 mean_us=2151.267 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=4537 mean_us=739.997 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=4537 mean_us=2773.818 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=4537 mean_us=430.642 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=4535 mean_us=8857.960 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=4536 mean_us=8335.157 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=997420096517 capture=6960 sent=4657 returned=4655 invalid=0 drop=8 usb_error=3 dp_flips=6951 seq=121052 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=38.813 cpu_one_core_pct=37.827 copy_wall_pct=25.789 copy_cpu_pct=25.808 sent=4657 returned=4655 errors=3
+PERF metric=copy_wall n=4657 mean_us=2149.336 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=4657 mean_us=2150.928 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=4657 mean_us=739.453 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=4657 mean_us=2771.866 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=4657 mean_us=430.674 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=4655 mean_us=8857.057 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=4656 mean_us=8335.260 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=998420330877 capture=7080 sent=4777 returned=4775 invalid=0 drop=8 usb_error=3 dp_flips=7071 seq=121172 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=39.813 cpu_one_core_pct=37.835 copy_wall_pct=25.809 copy_cpu_pct=25.811 sent=4777 returned=4775 errors=3
+PERF metric=copy_wall n=4777 mean_us=2151.046 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=4777 mean_us=2151.205 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=4777 mean_us=739.187 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=4777 mean_us=2772.156 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=4777 mean_us=430.769 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=4775 mean_us=8856.635 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=4776 mean_us=8335.186 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=999420615397 capture=7200 sent=4897 returned=4895 invalid=0 drop=8 usb_error=3 dp_flips=7191 seq=121292 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=40.813 cpu_one_core_pct=37.838 copy_wall_pct=25.809 copy_cpu_pct=25.812 sent=4897 returned=4895 errors=3
+PERF metric=copy_wall n=4897 mean_us=2151.003 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=4897 mean_us=2151.232 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=4897 mean_us=738.620 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=4897 mean_us=2770.592 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=8192.000
+PERF metric=output_qbuf n=4897 mean_us=430.795 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=4895 mean_us=8856.354 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=4896 mean_us=8335.201 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=7200 sequence=107480 active=1 retired=0
+stats ns=1000420892897 capture=7320 sent=5017 returned=5015 invalid=0 drop=8 usb_error=3 dp_flips=7311 seq=121412 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=41.814 cpu_one_core_pct=37.833 copy_wall_pct=25.800 copy_cpu_pct=25.803 sent=5017 returned=5015 errors=3
+PERF metric=copy_wall n=5017 mean_us=2150.261 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=5017 mean_us=2150.554 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=5017 mean_us=738.090 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=5017 mean_us=2768.426 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=5017 mean_us=430.838 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=5015 mean_us=8855.493 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=5016 mean_us=8335.210 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1001421182966 capture=7440 sent=5137 returned=5135 invalid=0 drop=8 usb_error=3 dp_flips=7431 seq=121532 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=42.814 cpu_one_core_pct=37.846 copy_wall_pct=25.808 copy_cpu_pct=25.813 sent=5137 returned=5135 errors=3
+PERF metric=copy_wall n=5137 mean_us=2150.985 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=5137 mean_us=2151.340 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=5137 mean_us=737.586 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=5137 mean_us=2767.733 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=5137 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=5135 mean_us=8855.157 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=5136 mean_us=8335.222 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1002421437246 capture=7560 sent=5257 returned=5255 invalid=0 drop=8 usb_error=3 dp_flips=7551 seq=121652 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=43.814 cpu_one_core_pct=37.846 copy_wall_pct=25.805 copy_cpu_pct=25.810 sent=5257 returned=5255 errors=3
+PERF metric=copy_wall n=5257 mean_us=2150.675 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=5257 mean_us=2151.092 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=5257 mean_us=737.088 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=5257 mean_us=2766.113 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=5257 mean_us=430.835 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=5255 mean_us=8854.814 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=5256 mean_us=8335.229 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1003421725756 capture=7680 sent=5377 returned=5375 invalid=0 drop=8 usb_error=3 dp_flips=7671 seq=121772 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=44.815 cpu_one_core_pct=37.847 copy_wall_pct=25.803 copy_cpu_pct=25.809 sent=5377 returned=5375 errors=3
+PERF metric=copy_wall n=5377 mean_us=2150.548 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=5377 mean_us=2151.033 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=5377 mean_us=736.628 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=5377 mean_us=2764.775 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=5377 mean_us=430.899 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=5375 mean_us=8854.052 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=5376 mean_us=8335.246 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1004422003406 capture=7800 sent=5497 returned=5495 invalid=0 drop=8 usb_error=3 dp_flips=7791 seq=121892 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=45.815 cpu_one_core_pct=37.843 copy_wall_pct=25.796 copy_cpu_pct=25.802 sent=5497 returned=5495 errors=3
+PERF metric=copy_wall n=5497 mean_us=2149.954 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=5497 mean_us=2150.491 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=5497 mean_us=736.207 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=5497 mean_us=2762.958 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=5497 mean_us=430.896 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=5495 mean_us=8853.367 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=5496 mean_us=8335.271 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1005422281025 capture=7920 sent=5617 returned=5615 invalid=0 drop=8 usb_error=3 dp_flips=7911 seq=122012 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=46.815 cpu_one_core_pct=37.845 copy_wall_pct=25.794 copy_cpu_pct=25.801 sent=5617 returned=5615 errors=3
+PERF metric=copy_wall n=5617 mean_us=2149.800 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=5617 mean_us=2150.391 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=5617 mean_us=735.795 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=5617 mean_us=2761.618 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=5617 mean_us=430.887 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=5615 mean_us=8853.104 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=5616 mean_us=8335.263 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1006422573915 capture=8040 sent=5737 returned=5735 invalid=0 drop=8 usb_error=3 dp_flips=8031 seq=122132 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=47.816 cpu_one_core_pct=37.847 copy_wall_pct=25.793 copy_cpu_pct=25.801 sent=5737 returned=5735 errors=3
+PERF metric=copy_wall n=5737 mean_us=2149.774 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=5737 mean_us=2150.415 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=5737 mean_us=735.409 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=5737 mean_us=2760.476 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=5737 mean_us=430.879 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=5735 mean_us=8852.430 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=5736 mean_us=8335.278 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1007422853935 capture=8160 sent=5857 returned=5855 invalid=0 drop=8 usb_error=3 dp_flips=8151 seq=122252 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=48.816 cpu_one_core_pct=37.854 copy_wall_pct=25.797 copy_cpu_pct=25.806 sent=5857 returned=5855 errors=3
+PERF metric=copy_wall n=5857 mean_us=2150.112 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=5857 mean_us=2150.797 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=5857 mean_us=735.029 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=5857 mean_us=2759.700 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=5857 mean_us=430.850 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=5855 mean_us=8852.098 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=5856 mean_us=8335.281 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1008423144335 capture=8280 sent=5977 returned=5975 invalid=0 drop=8 usb_error=3 dp_flips=8271 seq=122372 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=49.816 cpu_one_core_pct=37.853 copy_wall_pct=25.793 copy_cpu_pct=25.802 sent=5977 returned=5975 errors=3
+PERF metric=copy_wall n=5977 mean_us=2149.758 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=5977 mean_us=2150.490 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=5977 mean_us=734.665 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=5977 mean_us=2758.293 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=5977 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=5975 mean_us=8851.321 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=5976 mean_us=8335.290 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1009423428434 capture=8400 sent=6097 returned=6095 invalid=0 drop=8 usb_error=3 dp_flips=8391 seq=122492 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=50.816 cpu_one_core_pct=37.852 copy_wall_pct=25.789 copy_cpu_pct=25.799 sent=6097 returned=6095 errors=3
+PERF metric=copy_wall n=6097 mean_us=2149.449 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=6097 mean_us=2150.228 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=6097 mean_us=734.311 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=6097 mean_us=2757.010 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=6097 mean_us=430.845 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=6095 mean_us=8850.993 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=6096 mean_us=8335.299 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=8400 sequence=108680 active=1 retired=0
+stats ns=1010423712864 capture=8520 sent=6217 returned=6215 invalid=0 drop=8 usb_error=3 dp_flips=8511 seq=122612 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=51.817 cpu_one_core_pct=37.850 copy_wall_pct=25.785 copy_cpu_pct=25.795 sent=6217 returned=6215 errors=3
+PERF metric=copy_wall n=6217 mean_us=2149.119 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=6217 mean_us=2149.942 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=6217 mean_us=733.994 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=6217 mean_us=2755.744 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=6217 mean_us=430.861 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=6215 mean_us=8850.555 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=6216 mean_us=8335.306 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1011423996394 capture=8640 sent=6337 returned=6335 invalid=0 drop=8 usb_error=3 dp_flips=8631 seq=122732 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=52.817 cpu_one_core_pct=37.847 copy_wall_pct=25.780 copy_cpu_pct=25.790 sent=6337 returned=6335 errors=3
+PERF metric=copy_wall n=6337 mean_us=2148.677 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=6337 mean_us=2149.541 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=6337 mean_us=733.691 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=6337 mean_us=2754.407 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=6337 mean_us=430.887 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=6335 mean_us=8850.111 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=6336 mean_us=8335.315 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1012424323214 capture=8760 sent=6457 returned=6455 invalid=0 drop=8 usb_error=3 dp_flips=8751 seq=122852 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=53.817 cpu_one_core_pct=37.843 copy_wall_pct=25.776 copy_cpu_pct=25.787 sent=6457 returned=6455 errors=3
+PERF metric=copy_wall n=6457 mean_us=2148.394 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=6457 mean_us=2149.298 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=6457 mean_us=733.416 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=6457 mean_us=2753.236 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=6457 mean_us=430.898 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=6455 mean_us=8849.658 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=6456 mean_us=8335.322 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1013424588623 capture=8880 sent=6577 returned=6575 invalid=0 drop=8 usb_error=3 dp_flips=8871 seq=122972 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=54.817 cpu_one_core_pct=37.837 copy_wall_pct=25.777 copy_cpu_pct=25.788 sent=6577 returned=6575 errors=3
+PERF metric=copy_wall n=6577 mean_us=2148.419 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=6577 mean_us=2149.359 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=6577 mean_us=733.168 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=6577 mean_us=2752.382 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=6577 mean_us=430.876 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=6575 mean_us=8849.424 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=6576 mean_us=8335.327 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1014424881183 capture=9000 sent=6697 returned=6695 invalid=0 drop=8 usb_error=3 dp_flips=8991 seq=123092 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=55.818 cpu_one_core_pct=37.829 copy_wall_pct=25.774 copy_cpu_pct=25.786 sent=6697 returned=6695 errors=3
+PERF metric=copy_wall n=6697 mean_us=2148.195 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=6697 mean_us=2149.170 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=6697 mean_us=732.929 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=6697 mean_us=2751.284 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=6697 mean_us=430.836 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=6695 mean_us=8849.299 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=6696 mean_us=8335.332 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1015425166123 capture=9120 sent=6817 returned=6815 invalid=0 drop=8 usb_error=3 dp_flips=9111 seq=123212 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=56.818 cpu_one_core_pct=37.819 copy_wall_pct=25.769 copy_cpu_pct=25.781 sent=6817 returned=6815 errors=3
+PERF metric=copy_wall n=6817 mean_us=2147.760 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=6817 mean_us=2148.766 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=6817 mean_us=732.696 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=6817 mean_us=2749.985 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=6817 mean_us=430.768 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=6815 mean_us=8849.100 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=6816 mean_us=8335.338 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1016425422143 capture=9240 sent=6937 returned=6935 invalid=0 drop=8 usb_error=3 dp_flips=9231 seq=123332 dp_held=2 usb_buf_error=3 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=57.818 cpu_one_core_pct=37.810 copy_wall_pct=25.765 copy_cpu_pct=25.777 sent=6937 returned=6935 errors=3
+PERF metric=copy_wall n=6937 mean_us=2147.416 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=6937 mean_us=2148.457 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=6937 mean_us=732.468 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=6937 mean_us=2748.873 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=6937 mean_us=430.777 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=6935 mean_us=8848.887 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=6936 mean_us=8335.345 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+USB error kind=buffer count=4 ns=1016644750771 errno=0 streaming=1 on=1 index=0 flags=0x4041 bytesused=0 sequence=0 source_seq=123357 state=0
+USB error kind=buffer count=5 ns=1017086440369 errno=0 streaming=1 on=1 index=1 flags=0x4041 bytesused=0 sequence=0 source_seq=123410 state=0
+stats ns=1017425700602 capture=9360 sent=7057 returned=7055 invalid=0 drop=8 usb_error=5 dp_flips=9351 seq=123452 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=58.819 cpu_one_core_pct=37.795 copy_wall_pct=25.755 copy_cpu_pct=25.768 sent=7057 returned=7055 errors=5
+PERF metric=copy_wall n=7057 mean_us=2146.602 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=7057 mean_us=2147.676 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=7057 mean_us=732.257 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=7057 mean_us=2747.357 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=7057 mean_us=430.820 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=7055 mean_us=8848.377 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=7056 mean_us=8335.351 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flip gap=2 sequence=109720
+stats ns=1018425882552 capture=9480 sent=7177 returned=7175 invalid=0 drop=8 usb_error=5 dp_flips=9470 seq=123572 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=59.819 cpu_one_core_pct=37.793 copy_wall_pct=25.757 copy_cpu_pct=25.770 sent=7177 returned=7175 errors=5
+PERF metric=copy_wall n=7177 mean_us=2146.793 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=7177 mean_us=2147.899 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=7177 mean_us=732.054 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=7177 mean_us=2746.291 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=7177 mean_us=430.788 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=7175 mean_us=8848.328 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=7176 mean_us=8335.345 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1019426163292 capture=9600 sent=7297 returned=7295 invalid=0 drop=8 usb_error=5 dp_flips=9590 seq=123692 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=60.819 cpu_one_core_pct=37.802 copy_wall_pct=25.769 copy_cpu_pct=25.782 sent=7297 returned=7295 errors=5
+PERF metric=copy_wall n=7297 mean_us=2147.803 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=7297 mean_us=2148.862 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=7297 mean_us=731.911 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=7297 mean_us=2744.717 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=7297 mean_us=430.714 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=7295 mean_us=8849.130 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=7296 mean_us=8335.350 max_us=9856.020 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=9600 sequence=109881 active=1 retired=0
+stats ns=1020426453782 capture=9720 sent=7417 returned=7415 invalid=0 drop=8 usb_error=5 dp_flips=9710 seq=123812 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=61.819 cpu_one_core_pct=37.807 copy_wall_pct=25.777 copy_cpu_pct=25.790 sent=7417 returned=7415 errors=5
+PERF metric=copy_wall n=7417 mean_us=2148.488 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=7417 mean_us=2149.578 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=7417 mean_us=731.744 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=7417 mean_us=2743.198 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=7417 mean_us=430.682 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=7415 mean_us=8849.678 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=7416 mean_us=8335.356 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1021426739801 capture=9840 sent=7537 returned=7535 invalid=0 drop=8 usb_error=5 dp_flips=9830 seq=123932 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=62.820 cpu_one_core_pct=37.815 copy_wall_pct=25.787 copy_cpu_pct=25.800 sent=7537 returned=7535 errors=5
+PERF metric=copy_wall n=7537 mean_us=2149.307 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=7537 mean_us=2150.424 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=7537 mean_us=731.585 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=7537 mean_us=2741.690 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=7537 mean_us=430.699 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=7535 mean_us=8849.947 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=7536 mean_us=8335.373 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1022427327981 capture=9960 sent=7657 returned=7655 invalid=0 drop=8 usb_error=5 dp_flips=9951 seq=124052 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=63.820 cpu_one_core_pct=37.809 copy_wall_pct=25.785 copy_cpu_pct=25.799 sent=7657 returned=7655 errors=5
+PERF metric=copy_wall n=7657 mean_us=2149.157 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=7657 mean_us=2150.296 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=7657 mean_us=735.625 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=7657 mean_us=2740.747 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=7657 mean_us=430.687 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=7655 mean_us=8849.565 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=7656 mean_us=8335.407 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1023427462801 capture=10080 sent=7777 returned=7775 invalid=0 drop=8 usb_error=5 dp_flips=10071 seq=124172 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=64.821 cpu_one_core_pct=37.805 copy_wall_pct=25.783 copy_cpu_pct=25.797 sent=7777 returned=7775 errors=5
+PERF metric=copy_wall n=7777 mean_us=2149.014 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=7777 mean_us=2150.170 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=7777 mean_us=736.592 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=7777 mean_us=2740.148 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=7777 mean_us=430.769 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=7775 mean_us=8849.069 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=7776 mean_us=8335.471 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1024427748701 capture=10200 sent=7897 returned=7895 invalid=0 drop=8 usb_error=5 dp_flips=10191 seq=124292 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=65.822 cpu_one_core_pct=37.812 copy_wall_pct=25.788 copy_cpu_pct=25.802 sent=7897 returned=7895 errors=5
+PERF metric=copy_wall n=7897 mean_us=2149.452 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=7897 mean_us=2150.635 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=7897 mean_us=736.828 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=7897 mean_us=2740.081 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=7897 mean_us=430.767 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=7895 mean_us=8849.161 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=7896 mean_us=8335.561 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1025428059380 capture=10320 sent=8017 returned=8015 invalid=0 drop=8 usb_error=5 dp_flips=10311 seq=124412 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=66.821 cpu_one_core_pct=37.817 copy_wall_pct=25.790 copy_cpu_pct=25.804 sent=8017 returned=8015 errors=5
+PERF metric=copy_wall n=8017 mean_us=2149.569 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=8017 mean_us=2150.776 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=8017 mean_us=736.691 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=8017 mean_us=2739.733 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=8017 mean_us=430.795 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=8015 mean_us=8849.311 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=8016 mean_us=8335.402 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1026428307630 capture=10440 sent=8137 returned=8135 invalid=0 drop=8 usb_error=5 dp_flips=10431 seq=124532 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=67.821 cpu_one_core_pct=37.825 copy_wall_pct=25.794 copy_cpu_pct=25.809 sent=8137 returned=8135 errors=5
+PERF metric=copy_wall n=8137 mean_us=2149.940 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=8137 mean_us=2151.170 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=8137 mean_us=736.439 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=8137 mean_us=2739.664 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=8137 mean_us=430.815 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=8135 mean_us=8849.390 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=8136 mean_us=8335.406 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1027428574570 capture=10560 sent=8257 returned=8255 invalid=0 drop=8 usb_error=5 dp_flips=10551 seq=124652 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=68.821 cpu_one_core_pct=37.830 copy_wall_pct=25.801 copy_cpu_pct=25.812 sent=8257 returned=8255 errors=5
+PERF metric=copy_wall n=8257 mean_us=2150.521 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=8257 mean_us=2151.377 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=8257 mean_us=736.169 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=8257 mean_us=2739.884 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=8257 mean_us=430.857 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=8255 mean_us=8849.333 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=8256 mean_us=8335.404 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1028428869470 capture=10680 sent=8377 returned=8375 invalid=0 drop=8 usb_error=5 dp_flips=10671 seq=124772 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=69.822 cpu_one_core_pct=37.827 copy_wall_pct=25.795 copy_cpu_pct=25.806 sent=8377 returned=8375 errors=5
+PERF metric=copy_wall n=8377 mean_us=2150.023 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=8377 mean_us=2150.914 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=8377 mean_us=735.902 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=8377 mean_us=2738.974 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=8377 mean_us=430.883 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=8375 mean_us=8848.958 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=8376 mean_us=8335.409 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1029429154139 capture=10800 sent=8497 returned=8495 invalid=0 drop=8 usb_error=5 dp_flips=10791 seq=124892 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=70.822 cpu_one_core_pct=37.832 copy_wall_pct=25.798 copy_cpu_pct=25.810 sent=8497 returned=8495 errors=5
+PERF metric=copy_wall n=8497 mean_us=2150.288 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=8497 mean_us=2151.209 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=8497 mean_us=735.636 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=8497 mean_us=2738.827 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=8497 mean_us=430.889 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=8495 mean_us=8848.967 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=8496 mean_us=8335.413 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=10800 sequence=111081 active=0 retired=3
+stats ns=1030429400889 capture=10920 sent=8617 returned=8615 invalid=0 drop=8 usb_error=5 dp_flips=10911 seq=125012 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=71.822 cpu_one_core_pct=37.834 copy_wall_pct=25.798 copy_cpu_pct=25.809 sent=8617 returned=8615 errors=5
+PERF metric=copy_wall n=8617 mean_us=2150.217 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=8617 mean_us=2151.170 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=8617 mean_us=735.374 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=8617 mean_us=2738.368 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=8617 mean_us=430.915 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=8615 mean_us=8848.913 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=8616 mean_us=8335.415 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1031429687749 capture=11040 sent=8737 returned=8735 invalid=0 drop=8 usb_error=5 dp_flips=11031 seq=125132 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=72.823 cpu_one_core_pct=37.836 copy_wall_pct=25.798 copy_cpu_pct=25.810 sent=8737 returned=8735 errors=5
+PERF metric=copy_wall n=8737 mean_us=2150.248 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=8737 mean_us=2151.227 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=8737 mean_us=735.116 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=8737 mean_us=2738.024 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=8737 mean_us=430.951 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=8735 mean_us=8848.967 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=8736 mean_us=8335.422 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1032429969538 capture=11160 sent=8857 returned=8855 invalid=0 drop=8 usb_error=5 dp_flips=11151 seq=125252 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=73.823 cpu_one_core_pct=37.836 copy_wall_pct=25.795 copy_cpu_pct=25.808 sent=8857 returned=8855 errors=5
+PERF metric=copy_wall n=8857 mean_us=2150.044 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=8857 mean_us=2151.052 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=8857 mean_us=734.870 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=8857 mean_us=2737.469 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=8857 mean_us=430.979 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=8855 mean_us=8848.708 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=8856 mean_us=8335.427 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1033430257688 capture=11280 sent=8977 returned=8975 invalid=0 drop=8 usb_error=5 dp_flips=11271 seq=125372 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=74.823 cpu_one_core_pct=37.839 copy_wall_pct=25.796 copy_cpu_pct=25.809 sent=8977 returned=8975 errors=5
+PERF metric=copy_wall n=8977 mean_us=2150.121 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=8977 mean_us=2151.162 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=8977 mean_us=734.632 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=8977 mean_us=2737.174 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=8977 mean_us=430.987 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=8975 mean_us=8848.701 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=8976 mean_us=8335.429 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1034430544398 capture=11400 sent=9097 returned=9095 invalid=0 drop=8 usb_error=5 dp_flips=11391 seq=125492 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=75.823 cpu_one_core_pct=37.846 copy_wall_pct=25.801 copy_cpu_pct=25.813 sent=9097 returned=9095 errors=5
+PERF metric=copy_wall n=9097 mean_us=2150.480 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=9097 mean_us=2151.547 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=9097 mean_us=734.403 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=9097 mean_us=2737.166 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=9097 mean_us=430.987 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=9095 mean_us=8848.627 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=9096 mean_us=8335.433 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1035430825588 capture=11520 sent=9217 returned=9215 invalid=0 drop=8 usb_error=5 dp_flips=11511 seq=125612 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=76.824 cpu_one_core_pct=37.851 copy_wall_pct=25.804 copy_cpu_pct=25.817 sent=9217 returned=9215 errors=5
+PERF metric=copy_wall n=9217 mean_us=2150.755 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=9217 mean_us=2151.850 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=9217 mean_us=734.193 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=9217 mean_us=2737.043 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=9217 mean_us=430.952 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=9215 mean_us=8848.726 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=9216 mean_us=8335.437 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1036431105817 capture=11640 sent=9337 returned=9335 invalid=0 drop=8 usb_error=5 dp_flips=11631 seq=125732 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=77.824 cpu_one_core_pct=37.856 copy_wall_pct=25.807 copy_cpu_pct=25.820 sent=9337 returned=9335 errors=5
+PERF metric=copy_wall n=9337 mean_us=2151.003 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=9337 mean_us=2152.121 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=9337 mean_us=733.976 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=9337 mean_us=2736.916 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=9337 mean_us=430.934 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=9335 mean_us=8849.019 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=9336 mean_us=8335.439 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1037431395257 capture=11760 sent=9457 returned=9455 invalid=0 drop=8 usb_error=5 dp_flips=11751 seq=125852 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=78.824 cpu_one_core_pct=37.859 copy_wall_pct=25.808 copy_cpu_pct=25.822 sent=9457 returned=9455 errors=5
+PERF metric=copy_wall n=9457 mean_us=2151.091 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=9457 mean_us=2152.232 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=9457 mean_us=733.768 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=9457 mean_us=2736.654 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=9457 mean_us=430.942 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=9455 mean_us=8848.959 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=9456 mean_us=8335.443 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1038431678337 capture=11880 sent=9577 returned=9575 invalid=0 drop=8 usb_error=5 dp_flips=11871 seq=125972 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=79.825 cpu_one_core_pct=37.859 copy_wall_pct=25.806 copy_cpu_pct=25.820 sent=9577 returned=9575 errors=5
+PERF metric=copy_wall n=9577 mean_us=2150.907 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=9577 mean_us=2152.072 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=9577 mean_us=733.563 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=9577 mean_us=2736.114 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=9577 mean_us=430.925 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=9575 mean_us=8848.778 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=9576 mean_us=8335.446 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1039431964027 capture=12000 sent=9697 returned=9695 invalid=0 drop=8 usb_error=5 dp_flips=11991 seq=126092 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=80.825 cpu_one_core_pct=37.861 copy_wall_pct=25.806 copy_cpu_pct=25.820 sent=9697 returned=9695 errors=5
+PERF metric=copy_wall n=9697 mean_us=2150.936 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=9697 mean_us=2152.125 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=9697 mean_us=733.370 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=9697 mean_us=2735.814 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=9697 mean_us=430.922 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=9695 mean_us=8848.822 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=9696 mean_us=8335.451 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=12000 sequence=112281 active=0 retired=3
+stats ns=1040432282206 capture=12120 sent=9817 returned=9815 invalid=0 drop=8 usb_error=5 dp_flips=12111 seq=126212 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=81.825 cpu_one_core_pct=37.858 copy_wall_pct=25.801 copy_cpu_pct=25.816 sent=9817 returned=9815 errors=5
+PERF metric=copy_wall n=9817 mean_us=2150.526 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=9817 mean_us=2151.738 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=9817 mean_us=733.189 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=9817 mean_us=2735.113 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=9817 mean_us=430.942 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=9815 mean_us=8848.519 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=9816 mean_us=8335.452 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1041432573326 capture=12240 sent=9937 returned=9935 invalid=0 drop=8 usb_error=5 dp_flips=12231 seq=126332 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=82.825 cpu_one_core_pct=37.861 copy_wall_pct=25.803 copy_cpu_pct=25.818 sent=9937 returned=9935 errors=5
+PERF metric=copy_wall n=9937 mean_us=2150.724 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=9937 mean_us=2151.956 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=9937 mean_us=733.013 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=9937 mean_us=2735.018 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=9937 mean_us=430.958 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=9935 mean_us=8848.559 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=9936 mean_us=8335.457 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1042432853046 capture=12360 sent=10057 returned=10055 invalid=0 drop=8 usb_error=5 dp_flips=12351 seq=126452 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=83.826 cpu_one_core_pct=37.856 copy_wall_pct=25.801 copy_cpu_pct=25.816 sent=10057 returned=10055 errors=5
+PERF metric=copy_wall n=10057 mean_us=2150.544 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10057 mean_us=2151.799 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=10057 mean_us=732.860 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10057 mean_us=2734.539 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10057 mean_us=430.958 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10055 mean_us=8848.392 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10056 mean_us=8335.459 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1043433126346 capture=12480 sent=10177 returned=10175 invalid=0 drop=8 usb_error=5 dp_flips=12471 seq=126572 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=84.826 cpu_one_core_pct=37.852 copy_wall_pct=25.801 copy_cpu_pct=25.816 sent=10177 returned=10175 errors=5
+PERF metric=copy_wall n=10177 mean_us=2150.527 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10177 mean_us=2151.800 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=10177 mean_us=732.702 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10177 mean_us=2734.187 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10177 mean_us=430.926 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10175 mean_us=8848.331 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10176 mean_us=8335.461 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1044433388365 capture=12600 sent=10297 returned=10295 invalid=0 drop=8 usb_error=5 dp_flips=12591 seq=126692 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=85.826 cpu_one_core_pct=37.852 copy_wall_pct=25.804 copy_cpu_pct=25.820 sent=10297 returned=10295 errors=5
+PERF metric=copy_wall n=10297 mean_us=2150.787 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10297 mean_us=2152.079 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=10297 mean_us=732.555 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10297 mean_us=2734.124 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10297 mean_us=430.905 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10295 mean_us=8848.361 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10296 mean_us=8335.460 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1045433673785 capture=12720 sent=10417 returned=10415 invalid=0 drop=8 usb_error=5 dp_flips=12711 seq=126812 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=86.827 cpu_one_core_pct=37.845 copy_wall_pct=25.800 copy_cpu_pct=25.816 sent=10417 returned=10415 errors=5
+PERF metric=copy_wall n=10417 mean_us=2150.439 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10417 mean_us=2151.749 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=10417 mean_us=732.408 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10417 mean_us=2733.461 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10417 mean_us=430.880 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10415 mean_us=8848.254 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10416 mean_us=8335.466 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1046433955635 capture=12840 sent=10537 returned=10535 invalid=0 drop=8 usb_error=5 dp_flips=12831 seq=126932 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=87.827 cpu_one_core_pct=37.846 copy_wall_pct=25.804 copy_cpu_pct=25.819 sent=10537 returned=10535 errors=5
+PERF metric=copy_wall n=10537 mean_us=2150.751 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10537 mean_us=2152.079 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=10537 mean_us=732.263 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10537 mean_us=2733.480 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10537 mean_us=430.874 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10535 mean_us=8848.409 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10536 mean_us=8335.474 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flip gap=2 sequence=113228
+stats ns=1047434128495 capture=12960 sent=10657 returned=10655 invalid=0 drop=8 usb_error=5 dp_flips=12950 seq=127052 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=88.827 cpu_one_core_pct=37.840 copy_wall_pct=25.801 copy_cpu_pct=25.817 sent=10657 returned=10655 errors=5
+PERF metric=copy_wall n=10657 mean_us=2150.508 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10657 mean_us=2151.853 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=10657 mean_us=732.134 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10657 mean_us=2732.911 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10657 mean_us=430.874 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10655 mean_us=8848.329 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10656 mean_us=8335.460 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1048434418474 capture=13080 sent=10777 returned=10775 invalid=0 drop=8 usb_error=5 dp_flips=13070 seq=127172 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=89.827 cpu_one_core_pct=37.838 copy_wall_pct=25.801 copy_cpu_pct=25.817 sent=10777 returned=10775 errors=5
+PERF metric=copy_wall n=10777 mean_us=2150.520 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10777 mean_us=2151.883 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=10777 mean_us=732.023 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10777 mean_us=2731.367 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10777 mean_us=430.829 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10775 mean_us=8848.424 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10776 mean_us=8335.464 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+USB stopped; capture and DP continue
+stats ns=1049434664414 capture=13200 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=13190 seq=127292 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=10897 mean_us=731.813 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=13200 sequence=113482 active=1 retired=4
+stats ns=1050434951304 capture=13320 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=13310 seq=127412 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=11017 mean_us=731.507 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1051435680094 capture=13440 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=13431 seq=127532 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=11137 mean_us=732.328 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1052443955384 capture=13561 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=13552 seq=127653 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=11258 mean_us=734.116 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1053444237804 capture=13681 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=13672 seq=127773 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=11378 mean_us=734.028 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1054444512933 capture=13801 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=13792 seq=127893 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=11498 mean_us=733.738 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1055444769343 capture=13921 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=13912 seq=128013 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=11618 mean_us=733.415 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1056445054343 capture=14041 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=14032 seq=128133 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=11738 mean_us=733.088 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1057445321913 capture=14161 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=14152 seq=128253 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=11858 mean_us=732.768 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1058445609912 capture=14281 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=14272 seq=128373 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=11978 mean_us=732.457 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1059445896652 capture=14401 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=14392 seq=128493 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=12098 mean_us=732.150 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=14400 sequence=114682 active=2 retired=1
+stats ns=1060446178832 capture=14521 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=14512 seq=128613 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=12218 mean_us=731.852 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1061446460622 capture=14641 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=14632 seq=128733 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=12338 mean_us=731.559 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1062446745801 capture=14761 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=14752 seq=128853 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=12458 mean_us=731.270 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1063447033621 capture=14881 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=14872 seq=128973 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=12578 mean_us=730.986 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1064447314481 capture=15001 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=14992 seq=129093 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=12698 mean_us=730.710 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1065447600801 capture=15121 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=15112 seq=129213 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=12818 mean_us=730.439 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1066447884930 capture=15241 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=15232 seq=129333 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=12938 mean_us=730.173 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1067448190480 capture=15361 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=15352 seq=129453 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=13058 mean_us=729.915 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1068448473260 capture=15481 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=15472 seq=129573 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=13178 mean_us=729.665 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1069448753279 capture=15601 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=15592 seq=129693 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=13298 mean_us=729.419 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=15600 sequence=115882 active=2 retired=1
+stats ns=1070449041939 capture=15721 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=15712 seq=129813 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=13418 mean_us=729.173 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1071449310649 capture=15841 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=15832 seq=129933 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=13538 mean_us=728.936 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1072449594239 capture=15961 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=15952 seq=130053 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=13658 mean_us=728.699 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1073449878548 capture=16081 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=16072 seq=130173 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=13778 mean_us=728.469 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1074450162888 capture=16201 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=16192 seq=130293 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=13898 mean_us=728.239 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1075450445548 capture=16321 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=16312 seq=130413 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=14018 mean_us=728.017 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1076450733968 capture=16441 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=16432 seq=130533 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=14138 mean_us=727.794 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1077451015157 capture=16561 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=16552 seq=130653 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=14258 mean_us=727.577 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1078451300487 capture=16681 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=16672 seq=130773 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=14378 mean_us=727.366 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1079451587317 capture=16801 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=16792 seq=130893 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=14498 mean_us=727.154 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flip gap=2 sequence=117076
+DP flips=16800 sequence=117083 active=1 retired=3
+stats ns=1080451816577 capture=16921 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=16911 seq=131013 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=14618 mean_us=726.955 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1081452345986 capture=17041 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=17032 seq=131133 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=14738 mean_us=728.905 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1082452479636 capture=17161 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=17152 seq=131253 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=14858 mean_us=729.159 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1083452762506 capture=17281 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=17272 seq=131373 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=14978 mean_us=729.059 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1084453026206 capture=17401 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=17392 seq=131493 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=15098 mean_us=728.844 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1085453296625 capture=17521 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=17512 seq=131613 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=15218 mean_us=728.637 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1086453577095 capture=17641 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=17632 seq=131733 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=15338 mean_us=728.419 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1087453860775 capture=17761 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=17752 seq=131853 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=15458 mean_us=728.209 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1088454138665 capture=17881 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=17872 seq=131973 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=15578 mean_us=728.004 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+stats ns=1089454430504 capture=18001 sent=10839 returned=10837 invalid=0 drop=8 usb_error=5 dp_flips=17992 seq=132093 dp_held=2 usb_buf_error=5 usb_owner_error=0 usb_dq_error=0 usb_event_error=0 usb_send_error=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=15698 mean_us=727.800 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+DP flips=18000 sequence=118283 active=3 retired=0
+PERF total static_usb=0 elapsed_s=90.344 cpu_one_core_pct=37.841 copy_wall_pct=25.805 copy_cpu_pct=25.822 sent=10839 returned=10837 errors=5
+PERF metric=copy_wall n=10839 mean_us=2150.895 max_us=3919.950 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=copy_cpu n=10839 mean_us=2152.269 max_us=3872.011 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=capture_complete_to_dequeue n=15735 mean_us=727.739 max_us=1256.805 p50_upper_us=1024.000 p95_upper_us=1024.000 p99_upper_us=2048.000
+PERF metric=dequeue_to_submit n=10839 mean_us=2730.970 max_us=5404.020 p50_upper_us=4096.000 p95_upper_us=4096.000 p99_upper_us=4096.000
+PERF metric=output_qbuf n=10839 mean_us=430.822 max_us=596.340 p50_upper_us=512.000 p95_upper_us=512.000 p99_upper_us=512.000
+PERF metric=usb_queue_to_return n=10837 mean_us=8848.662 max_us=25678.021 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+PERF metric=submit_gap n=10838 mean_us=8335.456 max_us=9949.650 p50_upper_us=16384.000 p95_upper_us=16384.000 p99_upper_us=16384.000
+USB stopped; capture and DP continue
+DP closed flips=18030

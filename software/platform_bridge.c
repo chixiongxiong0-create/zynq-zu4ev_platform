@@ -2,6 +2,7 @@
 #include "uvc_core.h"
 #include "dp_display.h"
 #include "capture_broker.h"
+#include "perf_stats.h"
 #include <linux/videodev2.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
@@ -25,6 +26,8 @@ static void snapshot_signal(int sig) { (void)sig; snapshot_requested=1; }
 static void stop_signal(int sig) { (void)sig; quitting=1; }
 static uint64_t now_ns(void)
 { struct timespec t;clock_gettime(CLOCK_MONOTONIC,&t);return (uint64_t)t.tv_sec*1000000000+t.tv_nsec; }
+static uint64_t cpu_ns(void)
+{ struct timespec t;clock_gettime(CLOCK_PROCESS_CPUTIME_ID,&t);return (uint64_t)t.tv_sec*1000000000+t.tv_nsec; }
 static int xioctl(int fd,unsigned long cmd,void *arg)
 { int r; do r=ioctl(fd,cmd,arg); while(r<0 && errno==EINTR && !quitting);return r; }
 static int write_text(const char *path,const char *text)
@@ -109,6 +112,8 @@ static int start_capture(struct video *c)
     c->on=true;return 0;
 }
 
+enum usb_error_kind { USB_ERR_BUFFER, USB_ERR_OWNERSHIP, USB_ERR_DQBUF,
+    USB_ERR_EVENT, USB_ERR_SEND, USB_ERR_KINDS };
 struct platform {
     struct video cap,out;
     struct capture_broker broker;
@@ -120,7 +125,46 @@ struct platform {
     int exported[16];
     struct v4l2_buffer meta[16];
     uint64_t captured,sent,returned,invalid,dropped,usb_errors,dp_flips;
+    uint64_t usb_error_kind[USB_ERR_KINDS];
+    bool profile,static_usb,perf_started,static_filled[16];
+    uint64_t perf_start,perf_cpu_start,perf_end,perf_cpu_end,perf_sent_base,perf_returned_base,perf_errors_base,last_submit,dequeued_ns[16],submitted_ns[16];
+    struct perf_metric copy_wall,copy_cpu,source_age,dq_to_submit,qbuf_cost,usb_residence,submit_gap;
 };
+static void profile_report(struct platform *p)
+{
+    if(!p->profile)return;
+    uint64_t wall=p->perf_started?p->perf_end-p->perf_start:0,cpu=p->perf_started?p->perf_cpu_end-p->perf_cpu_start:0;
+    fprintf(stderr,"PERF total static_usb=%u elapsed_s=%.3f cpu_one_core_pct=%.3f copy_wall_pct=%.3f copy_cpu_pct=%.3f sent=%llu returned=%llu errors=%llu\n",
+        p->static_usb,wall/1e9,wall?100.0*cpu/wall:0,wall?100.0*p->copy_wall.sum/wall:0,
+        wall?100.0*p->copy_cpu.sum/wall:0,(unsigned long long)(p->sent-p->perf_sent_base),(unsigned long long)(p->returned-p->perf_returned_base),(unsigned long long)(p->usb_errors-p->perf_errors_base));
+    perf_print("copy_wall",&p->copy_wall);perf_print("copy_cpu",&p->copy_cpu);
+    perf_print("capture_complete_to_dequeue",&p->source_age);perf_print("dequeue_to_submit",&p->dq_to_submit);
+    perf_print("output_qbuf",&p->qbuf_cost);perf_print("usb_queue_to_return",&p->usb_residence);perf_print("submit_gap",&p->submit_gap);
+}
+/* Keep the historical total, but do not confuse returned ERROR buffers with
+ * ownership violations or ioctl failures. Sample details, never the counters. */
+static void usb_error(struct platform *p,enum usb_error_kind kind,
+                      const struct v4l2_buffer *b,int error)
+{
+    static const char *const names[]={"buffer","ownership","dqbuf","event","send"};
+    int saved=errno;
+    uint64_t count=++p->usb_error_kind[kind];p->usb_errors++;
+    if(count<=8 || !(count&(count-1))) {
+        fprintf(stderr,"USB error kind=%s count=%llu ns=%llu errno=%d streaming=%u on=%u",
+            names[kind],(unsigned long long)count,(unsigned long long)now_ns(),
+            error,p->session.streaming,p->out.on);
+        if(b) {
+            fprintf(stderr," index=%u flags=0x%x bytesused=%u sequence=%u",
+                b->index,b->flags,b->bytesused,b->sequence);
+            if(b->index<p->usb.count && b->index<SC130_MAX_BUFFERS)
+                fprintf(stderr," source_seq=%llu state=%u",
+                    (unsigned long long)p->usb.slot[b->index].sequence,
+                    (unsigned)p->usb.slot[b->index].state);
+        }
+        fputc('\n',stderr);
+    }
+    errno=saved;
+}
 static int find_capture(struct video *v)
 {
     glob_t g={0};int ret=-1;
@@ -143,6 +187,7 @@ static int recycle(struct platform *p)
 static void usb_stop(struct platform *p,bool disconnect)
 {
     free_buffers(&p->out);policy_reset(&p->usb);p->usb_sent_valid=false;
+    memset(p->static_filled,0,sizeof(p->static_filled));memset(p->submitted_ns,0,sizeof(p->submitted_ns));
     uvc_session_stop(&p->session,disconnect);
     fprintf(stderr,"USB stopped; capture and DP continue\n");
 }
@@ -186,6 +231,11 @@ static int usb_events(struct platform *p)
             if(alloc_buffers(&p->out)<0)return -1;
             policy_init(&p->usb,p->out.count,p->session.fps);
             p->usb_sent_valid=false;
+            p->perf_started=false;p->last_submit=0;
+            p->copy_wall=(struct perf_metric){0};p->copy_cpu=(struct perf_metric){0};
+            p->source_age=(struct perf_metric){0};p->dq_to_submit=(struct perf_metric){0};
+            p->qbuf_cost=(struct perf_metric){0};p->usb_residence=(struct perf_metric){0};p->submit_gap=(struct perf_metric){0};
+            p->perf_sent_base=p->sent;p->perf_returned_base=p->returned;p->perf_errors_base=p->usb_errors;
             fprintf(stderr,"USB STREAMON fps=%u copy; capture already running\n",p->session.fps);
         } else if(e.type==UVC_EVENT_STREAMOFF || e.type==UVC_EVENT_DISCONNECT)
             usb_stop(p,e.type==UVC_EVENT_DISCONNECT);
@@ -197,11 +247,18 @@ static int usb_complete(struct platform *p)
     if(!p->out.on)return 0;
     struct v4l2_buffer b={.type=p->out.type,.memory=V4L2_MEMORY_MMAP};
     while(xioctl(p->out.fd,VIDIOC_DQBUF,&b)==0) {
-        if(policy_usb_done(&p->usb,b.index)<0){errno=EPROTO;return -1;}
+        if(policy_usb_done(&p->usb,b.index)<0) {
+            usb_error(p,USB_ERR_OWNERSHIP,&b,EPROTO);errno=EPROTO;return -1;
+        }
+        if(p->profile && p->submitted_ns[b.index]) {
+            perf_add(&p->usb_residence,now_ns()-p->submitted_ns[b.index]);p->submitted_ns[b.index]=0;
+        }
         p->returned++;
-        if(b.flags&V4L2_BUF_FLAG_ERROR)p->usb_errors++;
+        if(p->profile && p->perf_started){p->perf_end=now_ns();p->perf_cpu_end=cpu_ns();}
+        if(b.flags&V4L2_BUF_FLAG_ERROR)usb_error(p,USB_ERR_BUFFER,&b,0);
     }
-    return errno==EAGAIN || errno==EINTR?0:-1;
+    if(errno==EAGAIN || errno==EINTR)return 0;
+    usb_error(p,USB_ERR_DQBUF,NULL,errno);return -1;
 }
 /* Diagnostic operates exclusively on the copied UVC output buffer. */
 static void usb_sequence_marker(uint8_t *output,uint32_t sequence,bool enabled)
@@ -221,13 +278,30 @@ static int usb_send(struct platform *p,uint64_t n)
     int slot=-1;
     for(unsigned i=0;i<p->usb.count;i++)if(p->usb.slot[i].state==FREE){slot=(int)i;break;}
     if(slot<0)return 0;
-    memcpy(p->out.b[slot].ptr,p->cap.b[latest].ptr,SC130_SIZE);
+    if(p->profile && !p->perf_started) {
+        p->perf_started=true;p->perf_start=now_ns();p->perf_cpu_start=cpu_ns();
+    }
+    if(!p->static_usb || !p->static_filled[slot]) {
+        uint64_t w=p->profile?now_ns():0,c=p->profile?cpu_ns():0;
+        memcpy(p->out.b[slot].ptr,p->cap.b[latest].ptr,SC130_SIZE);
+        if(p->profile){uint64_t end=now_ns();perf_add(&p->copy_wall,end-w);perf_add(&p->copy_cpu,cpu_ns()-c);}
+        p->static_filled[slot]=true;
+    }
     usb_sequence_marker(p->out.b[slot].ptr,seq,p->usb_sequence_marker);
     if(policy_capture(&p->usb,(unsigned)slot)<0 ||
        policy_complete(&p->usb,(unsigned)slot,seq,n,true)<0){errno=EPROTO;return -1;}
     int id=policy_take_latest(&p->usb,n);
-    if(id<0 || queue_buffer(&p->out,(unsigned)id,n)<0)return -1;
-    p->sent++;p->usb_sent_sequence=seq;p->usb_sent_valid=true;p->latest_used=true;
+    if(id<0)return -1;
+    uint64_t submit=p->profile?now_ns():0;
+    if(queue_buffer(&p->out,(unsigned)id,n)<0)return -1;
+    if(p->profile) {
+        uint64_t end=now_ns();perf_add(&p->qbuf_cost,end-submit);
+        if(p->dequeued_ns[latest])perf_add(&p->dq_to_submit,end-p->dequeued_ns[latest]);
+        if(p->last_submit)perf_add(&p->submit_gap,end-p->last_submit);
+        p->last_submit=end;p->submitted_ns[id]=submit;
+    }
+    p->sent++;if(p->profile){p->perf_end=now_ns();p->perf_cpu_end=cpu_ns();}
+    p->usb_sent_sequence=seq;p->usb_sent_valid=true;p->latest_used=true;
     if(!p->out.on) {
         if(xioctl(p->out.fd,VIDIOC_STREAMON,&p->out.type)<0)return -1;
         p->out.on=true;
@@ -246,6 +320,9 @@ static int capture_frames(struct platform *p)
             if(p->broker.latest>=0 && !p->latest_used)p->dropped++;
             if(broker_latest(&p->broker,b.index)<0){errno=EPROTO;return -1;}
             p->meta[b.index]=b;p->sequence=b.sequence;p->have_sequence=true;p->latest_used=false;
+            if(p->profile && p->session.streaming && p->perf_started){uint64_t t=now_ns(),complete=(uint64_t)b.timestamp.tv_sec*1000000000+(uint64_t)b.timestamp.tv_usec*1000;
+                p->dequeued_ns[b.index]=t;if(t>=complete)perf_add(&p->source_age,t-complete);}
+
         }
         if(recycle(p)<0)return -1;
     }
@@ -327,13 +404,17 @@ static void usage(const char *name)
 {
     fprintf(stderr,"Usage: %s [--capture /dev/videoN] [--output /dev/videoN]\n"
         " [--soft-connect PATH] [--stream-interface N] [--disable-dp]\n [--snapshot PATH] (SIGUSR1 saves latest YUY2; default /tmp/sc130-frame.yuy2)\n [--usb-sequence-marker] (diagnostic USB copy only; default OFF)\n"
+        " [--profile] (cumulative per-stream timing; quantiles are bucket upper bounds)\n"
+        " [--profile-static-usb] (diagnostic frozen USB image, NOT live video)\n"
         "Camera and DP start at boot. USB defaults to120fps, accepts60fps.\n",name);
 }
 int main(int argc,char **argv)
 {
-    const char *cappath=NULL,*outpath=NULL,*soft=NULL,*snapshot="/tmp/sc130-frame.yuy2";bool use_dp=true,marker=false;unsigned stream_if=1;
+    const char *cappath=NULL,*outpath=NULL,*soft=NULL,*snapshot="/tmp/sc130-frame.yuy2";bool use_dp=true,marker=false,profile=false,static_usb=false;unsigned stream_if=1;
     for(int i=1;i<argc;i++) {
-        if(!strcmp(argv[i],"--disable-dp"))use_dp=false;
+        if(!strcmp(argv[i],"--profile"))profile=true;
+        else if(!strcmp(argv[i],"--profile-static-usb")){profile=true;static_usb=true;}
+        else if(!strcmp(argv[i],"--disable-dp"))use_dp=false;
         else if(!strcmp(argv[i],"--usb-sequence-marker"))marker=true;
         else if(!strcmp(argv[i],"--enable-120")){} /* compatibility; enabled by default */
         else if(!strcmp(argv[i],"--help")){usage(argv[0]);return 0;}
@@ -347,6 +428,8 @@ int main(int argc,char **argv)
     if(stream_if>255){usage(argv[0]);return 2;}
     signal(SIGINT,stop_signal);signal(SIGTERM,stop_signal);signal(SIGUSR1,snapshot_signal);
     struct platform p={.cap={.fd=-1},.out={.fd=-1},.usb_sequence_marker=marker};
+    p.profile=profile;p.static_usb=static_usb;p.perf_start=now_ns();p.perf_cpu_start=cpu_ns();
+    if(static_usb)fprintf(stderr,"DIAGNOSTIC STATIC USB: output slots copied once; USB image is NOT live; DP stays live\n");
     for(unsigned i=0;i<16;i++)p.exported[i]=-1;
     policy_init(&p.usb,0,120);uvc_session_init(&p.session,true,stream_if);
     if(marker)fprintf(stderr,"USB sequence marker enabled: Y[0..7]=SC10 + source sequence LE32; USB output copy only\n");
@@ -380,10 +463,10 @@ int main(int argc,char **argv)
         int r=poll(f,3,timeout);
         if(r<0){if(errno==EINTR)continue;perror("poll");goto finish;}
         if(f[1].revents&POLLPRI)if(usb_events(&p)<0) {
-            p.usb_errors++;perror("USB events");if(soft)write_text(soft,"disconnect");usb_detach(&p);
+            usb_error(&p,USB_ERR_EVENT,NULL,errno);perror("USB events");if(soft)write_text(soft,"disconnect");usb_detach(&p);
         }
         if(f[1].revents&(POLLHUP|POLLNVAL))usb_detach(&p);
-        if(p.out.fd>=0 && usb_complete(&p)<0){p.usb_errors++;perror("USB completion");usb_detach(&p);}
+        if(p.out.fd>=0 && usb_complete(&p)<0){perror("USB completion");usb_detach(&p);}
         if(f[2].revents&(POLLERR|POLLHUP|POLLNVAL))p.dp_fault=true;
         if(dp_events(&p)<0){perror("DP ownership");goto finish;}
         if(capture_frames(&p)<0){perror("capture dequeue");goto finish;}
@@ -394,18 +477,25 @@ int main(int argc,char **argv)
         }
         if(dp_send(&p)<0){perror("DP ownership");goto finish;}
         n=now_ns();
-        if(p.out.fd>=0 && usb_send(&p,n)<0){p.usb_errors++;perror("USB send");usb_detach(&p);}
+        if(p.out.fd>=0 && usb_send(&p,n)<0){usb_error(&p,USB_ERR_SEND,NULL,errno);perror("USB send");usb_detach(&p);}
         if(f[0].revents&(POLLHUP|POLLNVAL)){fprintf(stderr,"capture device removed\n");goto finish;}
         if(n-lastlog>=1000000000ull) {
             unsigned held=0;for(unsigned i=0;i<p.cap.count;i++)held+=p.broker.dp[i];
-            fprintf(stderr,"stats ns=%llu capture=%llu sent=%llu returned=%llu invalid=%llu drop=%llu usb_error=%llu dp_flips=%llu seq=%u dp_held=%u\n",
+            fprintf(stderr,"stats ns=%llu capture=%llu sent=%llu returned=%llu invalid=%llu drop=%llu usb_error=%llu dp_flips=%llu seq=%u dp_held=%u usb_buf_error=%llu usb_owner_error=%llu usb_dq_error=%llu usb_event_error=%llu usb_send_error=%llu\n",
                 (unsigned long long)n,(unsigned long long)p.captured,(unsigned long long)p.sent,
                 (unsigned long long)p.returned,(unsigned long long)p.invalid,(unsigned long long)p.dropped,
-                (unsigned long long)p.usb_errors,(unsigned long long)p.dp_flips,p.sequence,held);lastlog=n;
+                (unsigned long long)p.usb_errors,(unsigned long long)p.dp_flips,p.sequence,held,
+                (unsigned long long)p.usb_error_kind[USB_ERR_BUFFER],
+                (unsigned long long)p.usb_error_kind[USB_ERR_OWNERSHIP],
+                (unsigned long long)p.usb_error_kind[USB_ERR_DQBUF],
+                (unsigned long long)p.usb_error_kind[USB_ERR_EVENT],
+                (unsigned long long)p.usb_error_kind[USB_ERR_SEND]);lastlog=n;
+            profile_report(&p);
         }
     }
     result=0;
 finish:
+    profile_report(&p);
     if(soft)write_text(soft,"disconnect");
     usb_detach(&p);
     /* Stop acquisition but retain mappings/exports until scanout definitely stops. */
