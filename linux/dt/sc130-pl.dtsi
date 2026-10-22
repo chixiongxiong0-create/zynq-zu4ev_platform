@@ -1,0 +1,62 @@
+/ {
+    sc130_video_clock: sc130-video-clock {
+        compatible = "fixed-clock";
+        #clock-cells = <0>;
+        clock-frequency = <200000000>;
+        clock-output-names = "external-mmcm-video-200MHz";
+    };
+    amba_pl: amba-pl {
+        compatible = "simple-bus";
+        #address-cells = <2>;
+        #size-cells = <2>;
+        ranges;
+        dma-ranges = <0 0 0 0 0 0x40000000>;
+        sc130_vdma: dma-controller@a0000000 {
+            compatible = "xlnx,axi-vdma-1.00.a";
+            reg = <0 0xa0000000 0 0x10000>;
+            #dma-cells = <1>;
+            xlnx,addrwidth = <32>;
+            xlnx,num-fstores = <4>;
+            xlnx,flush-fsync = <3>;
+            clocks = <&sc130_video_clock>, <&sc130_video_clock>, <&sc130_video_clock>;
+            clock-names = "s_axi_lite_aclk", "m_axi_s2mm_aclk", "s_axis_s2mm_aclk";
+            status = "disabled";
+            dma-channel-s2mm {
+                compatible = "xlnx,axi-vdma-s2mm-channel";
+                interrupt-parent = <&gic>;
+                /* XSA INTID 121; DT SPI cells exclude the first 32 INTIDs. */
+                interrupts = <0 89 4>;
+                xlnx,datawidth = <32>;
+            };
+        };
+        sc130_vdma1: dma-controller@a0020000 {
+            compatible = "xlnx,axi-vdma-1.00.a";
+            reg = <0 0xa0020000 0 0x10000>;
+            #dma-cells = <1>;
+            xlnx,addrwidth = <32>;
+            xlnx,num-fstores = <4>;
+            xlnx,flush-fsync = <3>;
+            clocks = <&sc130_video_clock>, <&sc130_video_clock>, <&sc130_video_clock>;
+            clock-names = "s_axi_lite_aclk", "m_axi_s2mm_aclk", "s_axis_s2mm_aclk";
+            status = "disabled";
+            dma-channel-s2mm {
+                compatible = "xlnx,axi-vdma-s2mm-channel";
+                interrupt-parent = <&gic>;
+                interrupts = <0 91 4>;
+                xlnx,datawidth = <32>;
+            };
+        };
+        sc130_capture: capture@a0010000 {
+            compatible = "sc130,dual-frame-gate-v2";
+            reg = <0 0xa0010000 0 0x10000>, <0 0xa0030000 0 0x10000>;
+            reg-names = "gate0", "gate1";
+            interrupt-parent = <&gic>;
+            interrupts = <0 90 4>, <0 92 4>;
+            interrupt-names = "frame0", "frame1";
+            dmas = <&sc130_vdma 1>, <&sc130_vdma1 1>;
+            dma-names = "capture0", "capture1";
+            dma-address-bits = <32>;
+            status = "disabled";
+        };
+    };
+};

@@ -1,0 +1,88 @@
+{
+  "BOOT.BIN": {
+    "bytes": 9091376,
+    "sha256": "610ebe8d119f95d34c025aa82467bb430021979876faa69eb9471f10ccf8aeac"
+  },
+  "image.ub": {
+    "bytes": 13347164,
+    "sha256": "f8eb36b8f5a2eef21bc8cf2c43d67fbcbfce9e0181b9c833661c96ce8702b6f3"
+  },
+  "QSPI_LINUX.bin": {
+    "bytes": 25930076,
+    "sha256": "3055675fe1e2e574cc8dce41eeb4ac002432fe65e1e62afff8a8d43cbb5863b7"
+  },
+  "layout": {
+    "flash_bytes": 33554432,
+    "fit_offset": 12582912,
+    "fit_limit": 20971520
+  },
+  "QSPI_LINUX.mcs": {
+    "bytes": 72935087,
+    "sha256": "69617dcb3ce6fd1d6276da3169752531511e9bc45195924b5aba05cdda13791b"
+  },
+  "sc130_platform.bit": {
+    "bytes": 7797867,
+    "sha256": "4f5839013c702bfb216de8ce38f7381b95524b8a73ad992e2e4860a56a38f012"
+  },
+  "sc130_platform.xsa": {
+    "bytes": 1630083,
+    "sha256": "a5fe667d9104c61ba5f68da41bb0f90625535c5c591337eae8677c5284bed13e"
+  },
+  "sc130_platform.ltx": {
+    "bytes": 100010,
+    "sha256": "5e644c46b359dffdcf4883e0fae31b93c159fac860a6191aba6c5bfb8f39f7b6"
+  },
+  "tone_config.json": {
+    "bytes": 363,
+    "sha256": "12fc0f8a62ea734d27bc56e83876aa989015d7eb0ddefb535c8401a669945598"
+  },
+  "initramfs.cpio.gz": {
+    "bytes": 2576725,
+    "sha256": "b73021d0df68f59060f19eb04d29d54ea686362c007cf4cddf97c9569f3143a7"
+  },
+  "Image.gz": {
+    "bytes": 10739921,
+    "sha256": "1b5c9a9d131b4df166cc23fbaefa1cc47ad25cd3d4e27041c88e9b694d17b8bb"
+  },
+  "system.dtb": {
+    "bytes": 29285,
+    "sha256": "f0cd7ff70c5a5449ebe18ae5c2e79b39806c1451ad6ef48745f7bafba6e17c23"
+  },
+  "configuration": {
+    "black_level_RAW10": 52,
+    "AEC": "auto",
+    "AGC": "manual",
+    "sensor_BLC": "auto",
+    "sensor_RNC": "auto",
+    "kernel_patches": [
+      "0001",
+      "0002",
+      "0003",
+      "0004",
+      "0005"
+    ],
+    "DP_detect": "fast HPD low; connect polling; HPD init after connector creation",
+    "target_mode": "1280x1024@120",
+    "bridge_sha256": "0d6e818e45b426476e87944e277104d03030d73cd99cb8d2971d4ce8d3558fe1",
+    "kernel_Image_sha256": "0118b7a5a3730ecd9dbcbe7b61eef97d598d4ca03ec9d9ba9f42da9645addd2b",
+    "patch_0005_sha256": "d8dcb12ecb1d16b26fac3d2071ba8d4f8065038718f1b078ea1ecd2cc8dfd373"
+  },
+  "flash_expected": {
+    "image_bytes": 25930076,
+    "erase_bytes": 25952256,
+    "image_sha256": "3055675fe1e2e574cc8dce41eeb4ac002432fe65e1e62afff8a8d43cbb5863b7",
+    "expected_flash_sha256": "45a9bc2783323e0d9c633acdaf3c6b55599e2a17a4aa909371df003fb89236a1"
+  },
+  "verification": {
+    "flash_byte_readback": "PASS",
+    "flash_full_sha256": "45a9bc2783323e0d9c633acdaf3c6b55599e2a17a4aa909371df003fb89236a1",
+    "qspi_system_reset_boot": "PASS",
+    "single_PL_load": true,
+    "DP_auto_connect": "PASS without manual detect",
+    "DP_refresh_hz": 120,
+    "capture_invalid": 0,
+    "USB_enumeration": "SuperSpeed",
+    "USB_zero_error_validation": false,
+    "physical_power_cycle_validation": false
+  }
+}

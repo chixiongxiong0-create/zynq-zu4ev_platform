@@ -1,0 +1,81 @@
+/dts-v1/;
+#include "zynqmp.dtsi"
+#include "zynqmp-clk-ccf.dtsi"
+#include <dt-bindings/phy/phy.h>
+#include <dt-bindings/gpio/gpio.h>
+#include "sc130-pl.dtsi"
+/ {
+    model = "ZUMINI SC130 DP + USB120 static tone platform";
+    compatible = "alinx,zumini", "xlnx,zynqmp";
+    aliases { serial0 = &uart0; spi0 = &qspi; };
+    chosen {
+        stdout-path = "serial0:115200n8";
+        bootargs = "console=ttyPS0,115200 earlycon=cdns,mmio,0xff000000 clk_ignore_unused rdinit=/init cma=256M";
+        /* initrd start/end are supplied by the verified temporary boot command. */
+    };
+    memory@0 { device_type = "memory";reg = <0 0 0 0x40000000>; };
+    reserved-memory {
+        #address-cells = <2>;#size-cells = <2>;ranges;
+        atf@0 { reg = <0 0 0 0x80000>;no-map; };
+        /* Preserve the existing QSPI maintenance staging reservation. */
+        qspi_staging@30000000 { reg = <0 0x30000000 0 0x04000000>;no-map; };
+    };
+    usb_gtr_ref1: usb-gtr-ref1 {
+        compatible = "fixed-clock";
+        #clock-cells = <0>;
+        clock-frequency = <26000000>;
+    };
+};
+&pss_ref_clk { clock-frequency = <33333333>; };
+&uart0 { status = "okay"; };
+&gpio { status = "okay"; };
+&psgtr {
+    status = "okay";
+    clocks = <&usb_gtr_ref1>, <&dp_gtr_ref2>;
+    clock-names = "ref1", "ref2";
+};
+/* Hardware report: connector marked USB1 routes PS USB0 MIO52..63/GTR lane1.
+ * This is deliberately disabled until integrator resolves requested PS USB1
+ * versus connector USB1 and confirms matching FSBL/XSA/PHY reset ownership.
+ */
+&usb0 {
+    status = "disabled";
+    /delete-property/ reset-gpios;
+    reset-gpios = <&gpio 36 GPIO_ACTIVE_LOW>;
+    /* This kernel's dwc3-xilinx wrapper owns the PSGTR PHY. */
+    phys = <&psgtr 1 PHY_TYPE_USB3 0 1>;
+    phy-names = "usb3-phy";
+};
+&dwc3_0 {
+    status = "disabled";
+    dr_mode = "peripheral";
+    maximum-speed = "super-speed";
+};
+/* Both capture/VDMA and USB are opt-in after matching hardware readback. */
+#ifdef SC130_ENABLE_CAPTURE
+&sc130_vdma { status = "okay"; };
+&sc130_vdma1 { status = "okay"; };
+&sc130_capture { status = "okay"; };
+#endif
+#ifdef SC130_ENABLE_CONNECTOR_USB1_PS_USB0
+&usb0 { status = "okay"; };
+&dwc3_0 { status = "okay"; };
+#endif
+
+/ {
+ dp_gtr_ref2: dp-gtr-ref2 { compatible="fixed-clock"; #clock-cells=<0>; clock-frequency=<27000000>; };
+ dp_connector { compatible="dp-connector"; label="Mini DisplayPort"; type="mini";
+  port { dp_connector_in: endpoint { remote-endpoint=<&dp_out>; }; };
+ };
+};
+&zynqmp_dpdma { status="okay"; };
+&zynqmp_dpsub {
+ status="okay";
+ phys=<&psgtr 3 PHY_TYPE_DP 0 2>, <&psgtr 2 PHY_TYPE_DP 1 2>;
+ phy-names="dp-phy0", "dp-phy1";
+};
+&out_dp { dp_out: endpoint { remote-endpoint=<&dp_connector_in>; }; };
+&qspi {
+ status="okay";
+ flash@0 { compatible="jedec,spi-nor"; reg=<0>; spi-max-frequency=<25000000>; spi-tx-bus-width=<1>; spi-rx-bus-width=<4>; };
+};

@@ -1,0 +1,35 @@
+From: SC130 platform integration
+Subject: [PATCH 3/3] drm: zynqmp: restore vblank only for active modesets
+
+atomic_begin runs for every plane commit. Calling drm_crtc_vblank_on()
+unconditionally resets the software timestamp and adds a synthetic count
+before the actual vblank IRQ, making each framebuffer flip advance the
+sequence twice.
+
+Keep restoration in atomic_begin because this driver's default commit tail
+runs plane begin/flush before modeset enables; moving it to atomic_enable
+would leave the initial atomic_flush event without an enabled vblank.
+Restore only when the new CRTC is active and needs a modeset, matching the
+atomic helper's enable filtering. atomic_disable already calls vblank_off.
+
+Regression cases: active framebuffer-only updates do not restore; initial
+activation/resume, active mode changes and connector changes restore once;
+inactive/disable updates leave vblank off. Physical frame timing is unchanged.
+
+--- a/drivers/gpu/drm/xlnx/zynqmp_kms.c
++++ b/drivers/gpu/drm/xlnx/zynqmp_kms.c
+@@ -338,6 +338,13 @@ static void zynqmp_dpsub_crtc_atomic_begin(struct drm_crtc *crtc,
+ 					   struct drm_atomic_state *state)
+ {
+-	drm_crtc_vblank_on(crtc);
++	/*
++	 * Plane-only updates must not reset the software vblank count.
++	 * Restore before atomic_flush arms the event, but only when an active
++	 * modeset enables the CRTC after atomic_disable turned vblank off.
++	 */
++	if (crtc->state->active &&
++	    drm_atomic_crtc_needs_modeset(crtc->state))
++		drm_crtc_vblank_on(crtc);
+ }
+ 
+ static void zynqmp_dpsub_crtc_atomic_flush(struct drm_crtc *crtc,

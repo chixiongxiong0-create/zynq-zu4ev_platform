@@ -1,0 +1,31 @@
+--- a/include/linux/dma/xilinx_dma.h
++++ b/include/linux/dma/xilinx_dma.h
+@@ -40,4 +40,6 @@
+ int xilinx_vdma_channel_set_config(struct dma_chan *dchan,
+ 					struct xilinx_vdma_config *cfg);
+ 
++int xilinx_vdma_channel_is_halted(struct dma_chan *dchan);
++
+ #endif
+--- a/drivers/dma/xilinx/xilinx_dma.c
++++ b/drivers/dma/xilinx/xilinx_dma.c
+@@ -2596,6 +2596,19 @@
+ }
+ EXPORT_SYMBOL(xilinx_vdma_channel_set_config);
+ 
++/* Read-only provider query: clients must not map this provider's registers.
++ * A descriptor callback alone does not prove VDMA has stopped accepting SOF.
++ */
++int xilinx_vdma_channel_is_halted(struct dma_chan *dchan)
++{
++	struct xilinx_dma_chan *chan = to_xilinx_chan(dchan);
++
++	if (chan->xdev->dma_config->dmatype != XDMA_TYPE_VDMA)
++		return -EINVAL;
++	return !!(dma_ctrl_read(chan, XILINX_DMA_REG_DMASR) & XILINX_DMA_DMASR_HALTED);
++}
++EXPORT_SYMBOL_GPL(xilinx_vdma_channel_is_halted);
++
+ /* -----------------------------------------------------------------------------
+  * Probe and remove
+  */

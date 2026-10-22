@@ -1,0 +1,11 @@
+{
+  "black_level_raw10": 52,
+  "white_level_raw10": 1023,
+  "span": 971,
+  "range": "limited",
+  "Y_black": 16,
+  "Y_white": 235,
+  "normalization": "round-half-up",
+  "vendor_lut_sha256": "a25a72cbb69a43c060c24ccb8ebeab01a8a8258a364c2736f64275942e358095",
+  "corrected_lut_sha256": "356cc238aa7fd97f153db0c135fb724b3202d603a910e5e233e816e34e89c896"
+}

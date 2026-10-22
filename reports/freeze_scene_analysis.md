@@ -1,0 +1,13 @@
+# 画面静止现场检查（2026-10-21）
+
+用户确认DMA地址修正后，DP和PotPlayer历史重影均消失；随后报告画面不动。
+
+未复位板卡，先保存现场：freeze_scene_initial.log。板端capture计数每秒继续增加约120，DP翻页计数同步推进，invalid=0。USB sent/returned不再增长，停留在上一轮FFmpeg测试结束值；内核最后一次USB STREAMOFF在启动约49.87秒。当前没有新的USB播放请求，不能据此判断为采集系统卡死。
+
+通过SIGUSR1获取两张完整真实帧（freeze_content_probe.log），sequence分别32077、32455，SHA256分别3d750ad475c91421d490b22ae9a780bb10eab57afd49cdad0e6e433916327ed9和2638da91e3f912346d7fce991d48fb7e7ca6a4463ec476a0c411d96c7e03257f，确认实际内容也在变化，而非只有计数变化。
+
+重新建立电脑DirectShow采集后立即接收约120fps，板端USB计数恢复增长。PotPlayer进程仍是19:57启动的旧进程，早于上一轮FSBL测试的板卡复位，因此播放器旧设备会话未恢复是目前的解释；尚需用户确认具体冻结输出并重新打开设备验证。没有修改生产代码，也没有烧录QSPI。
+
+3分钟持续接收测试记录于freeze_usb_soak180.log，结果在测试结束后补充。
+
+持续接收已完成：180.01秒收到21,594帧，FFmpeg报告120fps，未出现停流（freeze_usb_soak180.log）。采集invalid=0，DP持续约120次切换/秒。USB累计错误由3增至5，约测试140秒时新增2个完成缓冲错误，未导致停止接收（freeze_usb_errors.log）；这不是零错误验收。测试结束已释放电脑采集设备，板端未重启。下一步由用户重新打开PotPlayer设备，确认旧会话恢复与具体冻结输出。

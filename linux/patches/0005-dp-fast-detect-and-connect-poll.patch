@@ -1,0 +1,58 @@
+--- a/drivers/gpu/drm/xlnx/zynqmp_dp.c
++++ b/drivers/gpu/drm/xlnx/zynqmp_dp.c
+@@ -1694,21 +1694,15 @@
+ static enum drm_connector_status __zynqmp_dp_bridge_detect(struct zynqmp_dp *dp)
+ {
+ 	struct zynqmp_dp_link_config *link_config = &dp->link_config;
+-	u32 state, i;
++	u32 state;
+ 	int ret;
+ 
+ 	lockdep_assert_held(&dp->lock);
+ 
+-	/*
+-	 * This is from heuristic. It takes some delay (ex, 100 ~ 500 msec) to
+-	 * get the HPD signal with some monitors.
++	/* Delayed HPD is recovered by connector polling. Do not sleep here:
++	 * the DRM mode-config mutex can also be needed by capture/USB userspace.
+ 	 */
+-	for (i = 0; i < 10; i++) {
+-		state = zynqmp_dp_read(dp, ZYNQMP_DP_INTERRUPT_SIGNAL_STATE);
+-		if (state & ZYNQMP_DP_INTERRUPT_SIGNAL_STATE_HPD)
+-			break;
+-		msleep(100);
+-	}
++	state = zynqmp_dp_read(dp, ZYNQMP_DP_INTERRUPT_SIGNAL_STATE);
+ 
+ 	if (state & ZYNQMP_DP_INTERRUPT_SIGNAL_STATE_HPD) {
+ 		ret = drm_dp_dpcd_read(&dp->aux, 0x0, dp->dpcd,
+--- a/drivers/gpu/drm/xlnx/zynqmp_kms.c
++++ b/drivers/gpu/drm/xlnx/zynqmp_kms.c
+@@ -537,6 +537,11 @@
+ 		goto err_encoder;
+ 	}
+ 
++	/* Recover delayed/missed HPD after boot without probing active video.
++	 * Native bridge HPD notification remains enabled independently.
++	 */
++	connector->polled = DRM_CONNECTOR_POLL_CONNECT;
++
+ 	ret = drm_connector_attach_encoder(connector, encoder);
+ 	if (ret < 0) {
+ 		dev_err(dpsub->dev, "failed to attach connector to encoder\n");
+@@ -598,11 +603,12 @@
+ 	if (ret)
+ 		return ret;
+ 
+-	drm_kms_helper_poll_init(drm);
+-
+ 	ret = zynqmp_dpsub_kms_init(dpsub);
+ 	if (ret < 0)
+-		goto err_poll_fini;
++		return ret;
++
++	/* HPD callbacks require the connector created by kms_init. */
++	drm_kms_helper_poll_init(drm);
+ 
+ 	/* Reset all components and register the DRM device. */
+ 	drm_mode_config_reset(drm);

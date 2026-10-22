@@ -1,0 +1,372 @@
+[
+  {
+    "symbol": "pmClockAms",
+    "object": "0xffdd6b0c",
+    "parent_pointer_address": "0xffdd6b18"
+  },
+  {
+    "symbol": "pmClockTopSwLsBus",
+    "object": "0xffddaa80",
+    "parent_pointer_address": "0xffddaa8c"
+  },
+  {
+    "symbol": "pmClockGem3RefUngated",
+    "object": "0xffdd50fc",
+    "parent_pointer_address": "0xffdd5108"
+  },
+  {
+    "symbol": "pmClockGem2RefUngated",
+    "object": "0xffdd5120",
+    "parent_pointer_address": "0xffdd512c"
+  },
+  {
+    "symbol": "pmClockGem1RefUngated",
+    "object": "0xffdd5144",
+    "parent_pointer_address": "0xffdd5150"
+  },
+  {
+    "symbol": "pmClockGem0RefUngated",
+    "object": "0xffdd5168",
+    "parent_pointer_address": "0xffdd5174"
+  },
+  {
+    "symbol": "pmClockGemTsuRef",
+    "object": "0xffdd4d54",
+    "parent_pointer_address": "0xffdd4d60"
+  },
+  {
+    "symbol": "pmClockCan1Ref",
+    "object": "0xffdd4f70",
+    "parent_pointer_address": "0xffdd4f7c"
+  },
+  {
+    "symbol": "pmClockCan1Mio",
+    "object": "0xffdd4c34",
+    "parent_pointer_address": "0xffdd4c40"
+  },
+  {
+    "symbol": "pmClockCan0Ref",
+    "object": "0xffdd4f94",
+    "parent_pointer_address": "0xffdd4fa0"
+  },
+  {
+    "symbol": "pmClockCan0Mio",
+    "object": "0xffdd4c58",
+    "parent_pointer_address": "0xffdd4c64"
+  },
+  {
+    "symbol": "pmClockLpdWdt",
+    "object": "0xffdd4a18",
+    "parent_pointer_address": "0xffdd4a24"
+  },
+  {
+    "symbol": "pmClockFpdWdt",
+    "object": "0xffdd4a3c",
+    "parent_pointer_address": "0xffdd4a48"
+  },
+  {
+    "symbol": "pmClockGem3Rx",
+    "object": "0xffdd4a60",
+    "parent_pointer_address": "0xffdd4a6c"
+  },
+  {
+    "symbol": "pmClockGem2Rx",
+    "object": "0xffdd4a84",
+    "parent_pointer_address": "0xffdd4a90"
+  },
+  {
+    "symbol": "pmClockGem1Rx",
+    "object": "0xffdd4aa8",
+    "parent_pointer_address": "0xffdd4ab4"
+  },
+  {
+    "symbol": "pmClockGem0Rx",
+    "object": "0xffdd4acc",
+    "parent_pointer_address": "0xffdd4ad8"
+  },
+  {
+    "symbol": "pmClockGem3Tx",
+    "object": "0xffdd4af0",
+    "parent_pointer_address": "0xffdd4afc"
+  },
+  {
+    "symbol": "pmClockGem3Ref",
+    "object": "0xffdd4b80",
+    "parent_pointer_address": "0xffdd4b8c"
+  },
+  {
+    "symbol": "pmClockGem2Tx",
+    "object": "0xffdd4b14",
+    "parent_pointer_address": "0xffdd4b20"
+  },
+  {
+    "symbol": "pmClockGem2Ref",
+    "object": "0xffdd4ba4",
+    "parent_pointer_address": "0xffdd4bb0"
+  },
+  {
+    "symbol": "pmClockGem1Tx",
+    "object": "0xffdd4b38",
+    "parent_pointer_address": "0xffdd4b44"
+  },
+  {
+    "symbol": "pmClockGem1Ref",
+    "object": "0xffdd4bc8",
+    "parent_pointer_address": "0xffdd4bd4"
+  },
+  {
+    "symbol": "pmClockGem0Tx",
+    "object": "0xffdd4b5c",
+    "parent_pointer_address": "0xffdd4b68"
+  },
+  {
+    "symbol": "pmClockGem0Ref",
+    "object": "0xffdd4bec",
+    "parent_pointer_address": "0xffdd4bf8"
+  },
+  {
+    "symbol": "pmClockGemTsu",
+    "object": "0xffdd4c10",
+    "parent_pointer_address": "0xffdd4c1c"
+  },
+  {
+    "symbol": "pmClockCan1",
+    "object": "0xffdd4c7c",
+    "parent_pointer_address": "0xffdd4c88"
+  },
+  {
+    "symbol": "pmClockCan0",
+    "object": "0xffdd4ca0",
+    "parent_pointer_address": "0xffdd4cac"
+  },
+  {
+    "symbol": "pmClockTimeStamp",
+    "object": "0xffdd4cc4",
+    "parent_pointer_address": "0xffdd4cd0"
+  },
+  {
+    "symbol": "pmClockI2C1",
+    "object": "0xffdd4ce8",
+    "parent_pointer_address": "0xffdd4cf4"
+  },
+  {
+    "symbol": "pmClockI2C0",
+    "object": "0xffdd4d0c",
+    "parent_pointer_address": "0xffdd4d18"
+  },
+  {
+    "symbol": "pmClockDll",
+    "object": "0xffdd4d30",
+    "parent_pointer_address": "0xffdd4d3c"
+  },
+  {
+    "symbol": "pmClockPl3",
+    "object": "0xffdd4d78",
+    "parent_pointer_address": "0xffdd4d84"
+  },
+  {
+    "symbol": "pmClockPl2",
+    "object": "0xffdd4d9c",
+    "parent_pointer_address": "0xffdd4da8"
+  },
+  {
+    "symbol": "pmClockPl1",
+    "object": "0xffdd4dc0",
+    "parent_pointer_address": "0xffdd4dcc"
+  },
+  {
+    "symbol": "pmClockPl0",
+    "object": "0xffdd4de4",
+    "parent_pointer_address": "0xffdd4df0"
+  },
+  {
+    "symbol": "pmClockAdma",
+    "object": "0xffdd4e08",
+    "parent_pointer_address": "0xffdd4e14"
+  },
+  {
+    "symbol": "pmClockNand",
+    "object": "0xffdd4e2c",
+    "parent_pointer_address": "0xffdd4e38"
+  },
+  {
+    "symbol": "pmClockDbgLpd",
+    "object": "0xffdd4e50",
+    "parent_pointer_address": "0xffdd4e5c"
+  },
+  {
+    "symbol": "pmClockLpdLsBus",
+    "object": "0xffdd4e74",
+    "parent_pointer_address": "0xffdd4e80"
+  },
+  {
+    "symbol": "pmClockLpdSwitch",
+    "object": "0xffdd4e98",
+    "parent_pointer_address": "0xffdd4ea4"
+  },
+  {
+    "symbol": "pmClockPcap",
+    "object": "0xffdd4ebc",
+    "parent_pointer_address": "0xffdd4ec8"
+  },
+  {
+    "symbol": "pmClockCsuPll",
+    "object": "0xffdd4ee0",
+    "parent_pointer_address": "0xffdd4eec"
+  },
+  {
+    "symbol": "pmClockIouSwitch",
+    "object": "0xffdd4f04",
+    "parent_pointer_address": "0xffdd4f10"
+  },
+  {
+    "symbol": "pmClockCpuR5Core",
+    "object": "0xffdd4f28",
+    "parent_pointer_address": "0xffdd4f34"
+  },
+  {
+    "symbol": "pmClockCpuR5",
+    "object": "0xffdd4f4c",
+    "parent_pointer_address": "0xffdd4f58"
+  },
+  {
+    "symbol": "pmClockSpi1",
+    "object": "0xffdd4fb8",
+    "parent_pointer_address": "0xffdd4fc4"
+  },
+  {
+    "symbol": "pmClockSpi0",
+    "object": "0xffdd4fdc",
+    "parent_pointer_address": "0xffdd4fe8"
+  },
+  {
+    "symbol": "pmClockUart1",
+    "object": "0xffdd5000",
+    "parent_pointer_address": "0xffdd500c"
+  },
+  {
+    "symbol": "pmClockUart0",
+    "object": "0xffdd5024",
+    "parent_pointer_address": "0xffdd5030"
+  },
+  {
+    "symbol": "pmClockSdio1",
+    "object": "0xffdd5048",
+    "parent_pointer_address": "0xffdd5054"
+  },
+  {
+    "symbol": "pmClockSdio0",
+    "object": "0xffdd506c",
+    "parent_pointer_address": "0xffdd5078"
+  },
+  {
+    "symbol": "pmClockQSpi",
+    "object": "0xffdd5090",
+    "parent_pointer_address": "0xffdd509c"
+  },
+  {
+    "symbol": "pmClockUsb1Bus",
+    "object": "0xffdd50b4",
+    "parent_pointer_address": "0xffdd50c0"
+  },
+  {
+    "symbol": "pmClockUsb0Bus",
+    "object": "0xffdd50d8",
+    "parent_pointer_address": "0xffdd50e4"
+  },
+  {
+    "symbol": "pmClockUsb3Dual",
+    "object": "0xffdd518c",
+    "parent_pointer_address": "0xffdd5198"
+  },
+  {
+    "symbol": "pmClockDbgTstmp",
+    "object": "0xffdd51b0",
+    "parent_pointer_address": "0xffdd51bc"
+  },
+  {
+    "symbol": "pmClockTopSwMain",
+    "object": "0xffddaaa4",
+    "parent_pointer_address": "0xffddaab0"
+  },
+  {
+    "symbol": "pmClockDpDma",
+    "object": "0xffdd51d4",
+    "parent_pointer_address": "0xffdd51e0"
+  },
+  {
+    "symbol": "pmClockGdma",
+    "object": "0xffdd51f8",
+    "parent_pointer_address": "0xffdd5204"
+  },
+  {
+    "symbol": "pmClockPcie",
+    "object": "0xffdd521c",
+    "parent_pointer_address": "0xffdd5228"
+  },
+  {
+    "symbol": "pmClockSata",
+    "object": "0xffdd5240",
+    "parent_pointer_address": "0xffdd524c"
+  },
+  {
+    "symbol": "pmClockGpuPp1",
+    "object": "0xffdd5264",
+    "parent_pointer_address": "0xffdd5270"
+  },
+  {
+    "symbol": "pmClockGpu",
+    "object": "0xffdd52ac",
+    "parent_pointer_address": "0xffdd52b8"
+  },
+  {
+    "symbol": "pmClockGpuPp0",
+    "object": "0xffdd5288",
+    "parent_pointer_address": "0xffdd5294"
+  },
+  {
+    "symbol": "pmClockDdr",
+    "object": "0xffddaac8",
+    "parent_pointer_address": "0xffddaad4"
+  },
+  {
+    "symbol": "pmClockDpStc",
+    "object": "0xffdd52d0",
+    "parent_pointer_address": "0xffdd52dc"
+  },
+  {
+    "symbol": "pmClockDpAudio",
+    "object": "0xffdd52f4",
+    "parent_pointer_address": "0xffdd5300"
+  },
+  {
+    "symbol": "pmClockDpVideo",
+    "object": "0xffdd5318",
+    "parent_pointer_address": "0xffdd5324"
+  },
+  {
+    "symbol": "pmClockDbgFpd",
+    "object": "0xffdd533c",
+    "parent_pointer_address": "0xffdd5348"
+  },
+  {
+    "symbol": "pmClockDbgTrace",
+    "object": "0xffdd5360",
+    "parent_pointer_address": "0xffdd536c"
+  },
+  {
+    "symbol": "pmClockAcpuHalf",
+    "object": "0xffdd5384",
+    "parent_pointer_address": "0xffdd5390"
+  },
+  {
+    "symbol": "pmClockAcpu",
+    "object": "0xffdd53cc",
+    "parent_pointer_address": "0xffdd53d8"
+  },
+  {
+    "symbol": "pmClockAcpuFull",
+    "object": "0xffdd53a8",
+    "parent_pointer_address": "0xffdd53b4"
+  }
+]

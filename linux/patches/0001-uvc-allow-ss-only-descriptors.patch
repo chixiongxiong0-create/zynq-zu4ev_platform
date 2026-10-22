@@ -1,0 +1,20 @@
+--- a/drivers/usb/gadget/function/f_uvc.c
++++ b/drivers/usb/gadget/function/f_uvc.c
+@@ -796,7 +796,8 @@
+ 	if (IS_ERR(f->fs_descriptors)) {
+ 		ret = PTR_ERR(f->fs_descriptors);
+ 		f->fs_descriptors = NULL;
+-		goto error;
++		if (ret != -ENODEV || !uvc->desc.ss_streaming || !uvc->desc.ss_control)
++			goto error;
+ 	}
+ 
+ 	f->hs_descriptors = uvc_copy_descriptors(uvc, USB_SPEED_HIGH);
+@@ -805,7 +806,8 @@
+ 	if (IS_ERR(f->hs_descriptors)) {
+ 		ret = PTR_ERR(f->hs_descriptors);
+ 		f->hs_descriptors = NULL;
+-		goto error;
++		if (ret != -ENODEV || !uvc->desc.ss_streaming || !uvc->desc.ss_control)
++			goto error;
+ 	}

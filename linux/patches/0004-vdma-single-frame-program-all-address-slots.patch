@@ -1,0 +1,31 @@
+--- a/drivers/dma/xilinx/xilinx_dma.c
++++ b/drivers/dma/xilinx/xilinx_dma.c
+@@ -1428,6 +1428,28 @@
+ 		i = chan->desc_submitcount;
+ 
+ 	list_for_each_entry(segment, &desc->segments, node) {
++		/* Single-frame stop/restart does not provide a reliable circular
++		 * frame-store phase across re-arms on this SC130 VDMA configuration.
++		 * A one-frame descriptor has exactly one destination: program it
++		 * into every hardware slot, as the validated standalone path does.
++		 * Do not change multi-frame or scatter-gather transactions.
++		 */
++		if (config->frm_cnt_en && config->coalesc == 1 &&
++		    list_is_singular(&desc->segments)) {
++			unsigned int frame;
++
++			for (frame = 0; frame < chan->num_frms; frame++) {
++				if (chan->ext_addr)
++					vdma_desc_write_64(chan,
++						XILINX_VDMA_REG_START_ADDRESS_64(frame),
++						segment->hw.buf_addr,
++						segment->hw.buf_addr_msb);
++				else
++					vdma_desc_write(chan,
++						XILINX_VDMA_REG_START_ADDRESS(frame),
++						segment->hw.buf_addr);
++			}
++		}
+ 		if (chan->ext_addr)
+ 			vdma_desc_write_64(chan,
+ 					   XILINX_VDMA_REG_START_ADDRESS_64(i++),

@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: GPL-2.0+
+/dts-v1/;
+#include "zynqmp.dtsi"
+#include "zynqmp-clk-ccf.dtsi"
+/ {
+ model = "ZUMINI SC130 QSPI Linux";
+ compatible = "xlnx,zynqmp";
+ aliases { serial0 = &uart0; spi0 = &qspi; };
+ chosen { stdout-path = "serial0:115200n8"; };
+ memory@0 { device_type = "memory"; reg = <0 0 0 0x40000000>; };
+};
+&uart0 { status = "okay"; };
+&qspi {
+ status = "okay";
+ flash@0 { compatible = "jedec,spi-nor"; reg = <0>; spi-max-frequency = <25000000>; spi-tx-bus-width = <1>; spi-rx-bus-width = <4>; };
+};
