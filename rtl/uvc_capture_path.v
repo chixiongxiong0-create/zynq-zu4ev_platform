@@ -9,7 +9,7 @@ module uvc_capture_path(input wire clk,resetn,
  output wire [31:0] s_axi_rdata,output wire [1:0] s_axi_rresp,output wire s_axi_rvalid,input wire s_axi_rready,
  output wire irq,epoch_start);
  wire[31:0] converted;wire cv,cs,ce;
- raw10_to_yuy2 converter(.clk(clk),.resetn(resetn),.s_data(raw),.s_valid(valid),.s_sof(sof),.s_eol(eol),.s_ready(),.m_data(converted),.m_valid(cv),.m_sof(cs),.m_eol(ce),.m_ready(1'b1));
+ isp converter(.clk(clk),.resetn(resetn),.s_data(raw),.s_valid(valid),.s_sof(sof),.s_eol(eol),.s_ready(),.m_data(converted),.m_valid(cv),.m_sof(cs),.m_eol(ce),.m_ready(1'b1));
  wire arm,abort_capture,ack,clear_stats,result_valid;
  wire[31:0] arm_epoch,ack_epoch,status,result_epoch,result_flags,input_seq,result_seq,result_words,result_lines,dropped,overflows,complete;
  // Source error must align with the converter's one-cycle latency.

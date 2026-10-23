@@ -1,6 +1,8 @@
 set root [file normalize [file join [file dirname [info script]] ..]]
 open_project $root/build/project/sc130_platform.xpr
-if {![llength [get_files -quiet */isp/sc130_tonemap_yuy2.v]]} {add_files $root/isp/sc130_tonemap_yuy2.v}
+foreach source [glob $root/isp/*.v] {
+    if {![llength [get_files -quiet $source]]} {add_files $source}
+}
 set_property AUTO_INCREMENTAL_CHECKPOINT 0 [get_runs synth_1]
 set_property INCREMENTAL_CHECKPOINT {} [get_runs synth_1]
 update_compile_order -fileset sources_1

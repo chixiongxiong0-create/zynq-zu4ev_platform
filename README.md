@@ -31,7 +31,7 @@ PL 构建生成 `dist/sc130_platform.xsa`。用 Vitis 根据此 XSA 生成匹配
 ```text
 SC130GS RAW10 / 双 lane MIPI
   → D-PHY / CSI-2 / 两像素并行
-  → isp/raw10_to_yuy2.v包装 → sc130_tonemap_yuy2：RAW黑位52校正＋静态亮度LUT，U=V=128
+  → isp/isp.v统一入口 → raw10_to_yuy2.v包装 → sc130_tonemap_yuy2：RAW黑位52校正＋静态亮度LUT，U=V=128
   → 两路交替整帧采集、VDMA写DDR
   → Linux V4L2完成帧队列
       ├─ DMA-BUF → DRM YUYV视频图层 → PS DPDMA → DP 120Hz

@@ -4,6 +4,7 @@ foreach file [get_files] {
  if {[string match -nocase {*sc130_dp_test/camera/rtl/*} $file] || [string match -nocase {*sc130_dp_test/camera/constraints/*} $file]} {remove_files $file}
 }
 foreach file [glob $root/rtl/*.v] {if {[file tail $file] ne "raw10_to_yuy2.v"} {add_files $file}}
+add_files $root/isp/isp.v
 add_files $root/isp/raw10_to_yuy2.v
 add_files $root/isp/sc130_tonemap_yuy2.v
 add_files -fileset constrs_1 $root/constraints/board.xdc

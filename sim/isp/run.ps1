@@ -1,7 +1,8 @@
 $ErrorActionPreference='Stop'
 Push-Location $PSScriptRoot
 try {
- & D:/Xilinx/2025.1/Vivado/bin/xvlog.bat -sv tb_isp.sv ../../isp/sc130_tonemap_yuy2.v ../../isp/raw10_to_yuy2.v *> ../../reports/isp/green_compile.log
+ New-Item -ItemType Directory -Force ../../reports/isp | Out-Null
+ & D:/Xilinx/2025.1/Vivado/bin/xvlog.bat -sv tb_isp.sv ../../isp/isp.v ../../isp/sc130_tonemap_yuy2.v ../../isp/raw10_to_yuy2.v *> ../../reports/isp/green_compile.log
  if($LASTEXITCODE -ne 0){throw 'compile failed'}
  & D:/Xilinx/2025.1/Vivado/bin/xelab.bat tb_isp -s isp_green *> ../../reports/isp/green_elaborate.log
  if($LASTEXITCODE -ne 0){throw 'elaboration failed'}

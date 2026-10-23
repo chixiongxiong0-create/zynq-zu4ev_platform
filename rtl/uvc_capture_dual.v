@@ -99,7 +99,7 @@ module uvc_capture_dual #(
     wire [63:0] source_tick;
 
     // Shared pixel format conversion
-    raw10_to_yuy2 converter (
+    isp converter (
         .clk     (clk),
         .resetn  (resetn),
         .s_data  (raw),

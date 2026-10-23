@@ -27,3 +27,21 @@ Outputs: `sc130_tonemap_yuy2.v`, `black_corrected_tone_lut.mem`, `tone_config.js
 Verification: `sim/isp/run.ps1`, XSim2025.1 explicit source list. The pre-change RTL fails the new black correction test at66ns (`reports/isp/black_red_run.log`). The corrected implementation passes3424 checked cycles plus8 stalled cycles, all1024 codes in both lane orderings, black/white anchors, monotonic vendor LUT, legacy bypass, invalid gaps, repeated reset, reset while stalled, SOF/EOL, sustained1280-pair traffic and the existing one-stage packet/global-fault alignment model. This is RTL evidence; final physical and board checks are reported separately.
 
 Sensor automatic BLC/RNC stays enabled. Their nonzero output target is deliberately accounted for in the FPGA curve rather than changed blindly. Auto exposure is enabled in the FSBL initialization table; automatic gain stays disabled. ROM correction does not perform automatic exposure, local contrast enhancement, denoising or lens flare removal.
+
+
+## ISP统一顶层
+
+采集模块统一例化 `isp.v` 中的 `isp`。当前层次为：
+
+```text
+isp
+└─ raw10_2_yuv_i : raw10_to_yuy2
+   ├─ BYPASS=0：sc130_tonemap_yuy2（黑位52校正、tone mapping、YUY2打包）
+   └─ BYPASS=1：旧线性RAW10→YUY2
+```
+
+RAW输入每拍两个10bit像素，输出内存字节顺序Y0/80/Y1/80。新顶层只组织模块，不增加寄存器，因此保持一级流水、现有READY/VALID和SOF/EOL行为。当前tone mapping和打包仍由已有模块实现，不重复做一次亮度映射。
+
+后续RAW域算法插在转换器之前，YUV域算法插在之后；每一级都应保持像素与SOF/EOL对齐，并传递背压。当前摄像头入口持续广播、不等待READY，应由采集FIFO吸收下游短暂停顿。若新增流水级，必须同步调整uvc_capture_dual.v与uvc_capture_path.v中的packet_error/global_fault延迟，不能只改ISP像素延迟。
+
+sim/isp/tb_isp.sv同时运行新isp入口与旧raw10_to_yuy2入口，每拍对比正常和BYPASS路径，覆盖全部1024灰度、两像素通道、复位、空拍、SOF/EOL、连续输出和8拍背压保持。构建脚本已包含isp.v；生成LUT不会覆盖此顶层。vendor目录不变。

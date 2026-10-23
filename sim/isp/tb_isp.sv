@@ -9,8 +9,19 @@ module tb_isp;
  reg packet_error=0,global_fault=0,packet_d=0,fault_d=0;
  always @(posedge clk) if(!resetn) begin packet_d<=0;fault_d<=0;end else begin packet_d<=packet_error;fault_d<=global_fault;end
  reg [7:0] lut[0:1023]; integer i,n=0; integer prev;
- raw10_to_yuy2 dut(clk,resetn,sd,sv,ss,se,ready,md,mv,ms,me,mr);
- raw10_to_yuy2 #(.BYPASS(1)) bypass(clk,resetn,sd,sv,ss,se,,bd,bv,bs,be,mr);
+ isp dut(clk,resetn,sd,sv,ss,se,ready,md,mv,ms,me,mr);
+ isp #(.BYPASS(1)) bypass(clk,resetn,sd,sv,ss,se,,bd,bv,bs,be,mr);
+ wire old_ready,old_bready;
+ wire [31:0] old_md,old_bd;
+ wire old_mv,old_ms,old_me,old_bv,old_bs,old_be;
+ raw10_to_yuy2 original(clk,resetn,sd,sv,ss,se,old_ready,old_md,old_mv,old_ms,old_me,mr);
+ raw10_to_yuy2 #(.BYPASS(1)) original_bypass(clk,resetn,sd,sv,ss,se,old_bready,old_bd,old_bv,old_bs,old_be,mr);
+ always @(posedge clk) begin
+  #1;
+  if({ready,md,mv,ms,me,bd,bv,bs,be} !==
+     {old_ready,old_md,old_mv,old_ms,old_me,old_bd,old_bv,old_bs,old_be})
+   $fatal(1,"ISP top changed legacy data, latency, markers or backpressure");
+ end
  function [7:0] linear; input integer a; begin linear=16+(a*219+511)/1023; end endfunction
  function [7:0] corrected_tone; input integer a; integer normalized;
  begin

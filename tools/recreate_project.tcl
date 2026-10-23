@@ -6,7 +6,7 @@ set_property target_language Verilog [current_project]
 set_property simulator_language Mixed [current_project]
 set_property verilog_define {SC130_UVC} [get_filesets sources_1]
 add_files [glob $root/rtl/*.v]
-add_files [list $root/isp/raw10_to_yuy2.v $root/isp/sc130_tonemap_yuy2.v]
+add_files [list $root/isp/isp.v $root/isp/raw10_to_yuy2.v $root/isp/sc130_tonemap_yuy2.v]
 add_files -fileset constrs_1 $root/constraints/board.xdc
 foreach name {camera_clocks camera_ila csi2_rx_uvc uvc_ila} {source $root/hardware/$name.tcl}
 source $root/hardware/ps_system.tcl
